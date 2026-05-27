@@ -3,6 +3,9 @@ Feature: Demoblaze User Access
   As a new customer
   I want to register my account and log in to the platform
 
+  Background: Enter to main Demoblaze main page
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com"
+
 @maximize
 Scenario: Successful user sign up
    And I click the "Sign up" link
