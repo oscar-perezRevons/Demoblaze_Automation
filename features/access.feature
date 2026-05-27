@@ -5,7 +5,6 @@ Feature: Demoblaze User Access
 
 @maximize
 Scenario: Successful user sign up
-   Given I am on the Demoblaze homepage "https://www.demoblaze.com"
    And I click the "Sign up" link
    When I enter the registration fields as show below
       | Username | Revons  |
@@ -15,7 +14,6 @@ Scenario: Successful user sign up
 
 @maximize   
 Scenario: Successful user log in
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | Revons  |
