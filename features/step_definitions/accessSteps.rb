@@ -3,7 +3,7 @@ Given('I am on the Demoblaze homepage {string}') do |url|
 end
 
 Given('I click the {string} link') do |link_text|
-    click_link(link_text)
+    click_on(link_text)
 end
 
 When('I enter the registration fields as show below') do |table|
