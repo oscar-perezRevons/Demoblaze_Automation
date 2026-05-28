@@ -27,19 +27,6 @@ When('I go to the cart page') do
   expect(page).to have_text('Products', wait: Capybara.default_max_wait_time)
 end
 
-Given('I start with an empty cart') do
-  visit 'https://www.demoblaze.com/index.html'
-  click_link('Cart')
-  expect(page).to have_text('Products', wait: Capybara.default_max_wait_time)
-
-  loop do
-    delete_link = first('#tbodyid a', text: 'Delete', minimum: 0, wait: 1)
-    break unless delete_link
-
-    delete_link.click
-  end
-end
-
 Then('the cart should contain the product {string}') do |product_name|
   expect(page).to have_css('#tbodyid tr', text: product_name, wait: Capybara.default_max_wait_time)
 end

@@ -11,18 +11,23 @@ Scenario: User can browse laptops and open a product detail
     Then the product detail title should be "Sony vaio i5"
     And the "Add to cart" action should be visible
 
-Scenario: User can add a product to cart from product detail
-    Given I start with an empty cart
-    And I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
-    When I open the product detail for "Samsung galaxy s6"
+@cart
+Scenario Outline: User can add a product to cart from product detail
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    When I open the product detail for "<Product>"
     And I add the current product to the cart
     Then an alert message saying "Product added" is displayed
     When I go to the cart page
-    Then the cart should contain the product "Samsung galaxy s6"
+    Then the cart should contain the product "<Product>"
 
+Examples:
+    | Product           |
+    | Samsung galaxy s6 |
+    | Nokia lumia 1520  |
+
+@cart
 Scenario: User can remove a product from cart
-    Given I start with an empty cart
-    And I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "Nokia lumia 1520"
     And I add the current product to the cart
     Then an alert message saying "Product added" is displayed
@@ -30,9 +35,9 @@ Scenario: User can remove a product from cart
     And I remove the product "Nokia lumia 1520" from the cart
     Then the cart should not contain the product "Nokia lumia 1520"
 
+@cart
 Scenario: User can complete checkout from cart
-    Given I start with an empty cart
-    And I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "Samsung galaxy s6"
     And I add the current product to the cart
     Then an alert message saying "Product added" is displayed
