@@ -3,7 +3,17 @@ require 'capybara'
 require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-ENV['BROWSER'] ||= 'firefox' 
+
+SUPPORTED_BROWSERS = %w[firefox chrome].freeze
+
+selected_browser = ENV.fetch('BROWSER', 'firefox').strip.downcase
+unless SUPPORTED_BROWSERS.include?(selected_browser)
+  raise ArgumentError,
+        "Unsupported BROWSER='#{ENV['BROWSER']}'. Supported values: #{SUPPORTED_BROWSERS.join(', ')}. " \
+        "Example: BROWSER=chrome cucumber"
+end
+
+ENV['BROWSER'] = selected_browser
 ENV['USER']    ||= "Pepazo"
 ENV['PSW']     ||= "ILoveQA"
 
