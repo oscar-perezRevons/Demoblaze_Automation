@@ -46,6 +46,8 @@ DRIVER_DINAMICO = "selenium_#{NAVEGADOR_ACTUAL}".to_sym
 Capybara.default_driver    = DRIVER_DINAMICO
 Capybara.javascript_driver = DRIVER_DINAMICO
 
+# $env:BROWSER='firefox'; cucumber
+
 Capybara.default_max_wait_time = 15
 Capybara.app_host = "https://www.demoblaze.com/index.html"
 Capybara.run_server = false
