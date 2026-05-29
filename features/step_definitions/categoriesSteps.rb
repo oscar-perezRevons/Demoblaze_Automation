@@ -22,11 +22,6 @@ Before do
             "ASUS Full HD" => "div.col-lg-4:nth-child(2)"
         } 
     }
-    @categories_link_css_selector = {
-        "Phones" => "a.list-group-item:nth-child(2)",
-        "Laptops" => "a.list-group-item:nth-child(3)",
-        "Monitors" => "a.list-group-item:nth-child(4)"
-    }
     @products_name_css_selector = @products_identifiers.transform_values do |productos|
         productos.transform_values do |base_selector|
             "#{base_selector} > div:nth-child(1) > div:nth-child(2) > h4:nth-child(1) > a:nth-child(1)"

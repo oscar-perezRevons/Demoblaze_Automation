@@ -28,6 +28,10 @@ When('I click the {string} button') do |button_text|
     find(@button_css_selector[button_text]).click
 end
 
+When('I click on the {string} button') do |button_text|
+    find(@button_css_selector[button_text]).click
+end
+
 Then('an alert message saying {string} should be displayed') do |expected_alert_text|
     sleep 2
     alert = page.driver.browser.switch_to.alert
