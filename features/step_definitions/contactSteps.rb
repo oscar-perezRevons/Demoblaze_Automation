@@ -1,16 +1,20 @@
 Before do
     @contactFormCssSelector = {
-        "Contact" => "li.nav-item:nth-child(2) > a:nth-child(1)",
         "Email" => "#recipient-email",
         "Name" => "#recipient-name",
         "Message" => "#message-text",
-        "Send message" => "#exampleModal > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(2)" 
+        "Send message" => "" 
+    };
+    @categoriesLinkCssSelector = {
+        "Phones" => "a.list-group-item:nth-child(2)",
+        "Laptops" => "a.list-group-item:nth-child(3)",
+        "Monitors" => "a.list-group-item:nth-child(4)"
     }
 end
 
 
 Given('I click the {string} link in the navbar') do |link_text|
-    find(@contactFormCssSelector[link_text]).click
+    find(@navbar_links_css_selector[link_text]).click
 end
 
 When('I fill out the form with the following details') do |table|
@@ -21,7 +25,7 @@ When('I fill out the form with the following details') do |table|
 end
 
 When('I click the {string} button') do |button_text|
-    find(@contactFormCssSelector[button_text]).click
+    find(@button_css_selector[button_text]).click
 end
 
 Then('an alert message saying {string} should be displayed') do |expected_alert_text|

@@ -2,12 +2,8 @@ When('I click on the product {string}') do |product_name|
   click_link(product_name)
 end
 
-When('I click the {string} button') do |button_text|
+When('I click the {string} button.') do |button_text|
   click_link_or_button(button_text) 
-end
-
-When('I click the {string} link in the navbar') do |button_text|
-  click_link(button_text)
 end
 
 When('I fill out the order form with the following details') do |table|

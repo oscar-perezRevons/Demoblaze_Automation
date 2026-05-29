@@ -18,7 +18,7 @@ Scenario: Successful checkout and purchase execution
     Then an alert message saying "Product added." is displayed
     
     When I click the "Cart" link in the navbar
-    And I click the "Place Order" button
+    And I click the "Place Order" button.
     And I fill out the order form with the following details
       | Name    | Oscar Perez |
       | Country | Bolivia     |
