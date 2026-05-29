@@ -14,4 +14,4 @@ Feature: Demoblaze Contact and Support
         | Name    | John Doe             |
         | Message | This is a test message. |
         And I click the "Send message" button
-        Then an alert message saying "Thanks for the message!!" should be displayed
+        Then an alert message saying "Thanks for the message!!" is displayed

@@ -1,8 +1,5 @@
 When('I click the {string} category link in the sidebar') do |category_name|
-  selector = @categories_link_css_selector && @categories_link_css_selector[category_name]
-  raise "Unknown category selector for '#{category_name}'" unless selector
-
-  find(selector, wait: Capybara.default_max_wait_time).click
+  find(category_link_selector(category_name), wait: Capybara.default_max_wait_time).click
 end
 
 Then('I should see a list of products related to the {string} category at the top') do |_category_name, table|
