@@ -1,11 +1,13 @@
 Feature: Demoblaze User Access
   In order to buy products in the store
-  As a customer
+  As a new customer
   I want to register my account and log in to the platform
+
+  Background: Enter to main Demoblaze main page
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
 
 @maximize
 Scenario: Successful user sign up
-   Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
    And I click the "Sign up" link
    When I enter the registration fields as show below
       | Username | Revons |
@@ -13,8 +15,8 @@ Scenario: Successful user sign up
     And I click the "Sign up" button in the modal
     Then an alert message saying "This user already exist." is displayed
 
+@maximize
 Scenario: Successful user log in
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | Revons |
@@ -23,7 +25,6 @@ Scenario: Successful user log in
     Then the welcome message "Welcome Revons" should be displayed in the navbar
 
 Scenario: User cannot sign up with empty credentials
-   Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
    And I click the "Sign up" link
    When I enter the registration fields as show below
       | Username | |
@@ -32,7 +33,6 @@ Scenario: User cannot sign up with empty credentials
     Then an alert message saying "Please fill out Username and Password." is displayed
 
 Scenario: User cannot log in with an invalid password
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | Revons |
@@ -49,7 +49,6 @@ Scenario: Successful user log out
     And the welcome message should not be displayed in the navbar
 
 Scenario: User cannot log in with empty credentials
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | |
@@ -58,7 +57,6 @@ Scenario: User cannot log in with empty credentials
     Then an alert message saying "Please fill out Username and Password." is displayed
 
 Scenario: New user can sign up and then log in
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Sign up" link
     When I enter the registration fields as show below
       | Username | AUTO_USER |
@@ -73,7 +71,6 @@ Scenario: New user can sign up and then log in
     Then the welcome message for the generated user should be displayed in the navbar
 
 Scenario: User cannot log in with a non-existing user
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | AUTO_USER |
@@ -90,7 +87,6 @@ Scenario: Access links are hidden after successful login
     And the "Sign up" link should not be visible in the navbar
 
 Scenario Outline: User cannot sign up with incomplete credentials
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Sign up" link
     When I enter the registration fields as show below
       | Username | <Username> |
@@ -104,7 +100,6 @@ Examples:
     |           | AUTO_PASS |
 
 Scenario Outline: User cannot log in with incomplete credentials
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     And I click the "Log in" link
     When I enter the login credentials as show below
       | Username | <Username> |

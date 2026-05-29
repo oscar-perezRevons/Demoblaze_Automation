@@ -4,7 +4,7 @@ Feature: Categorie Filter Navigation
   So that I can easily find the products I am interested in
 
   Background:
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com"
 
   @maximize
   Scenario: Navegate to Phones category

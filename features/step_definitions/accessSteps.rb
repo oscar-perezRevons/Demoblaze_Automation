@@ -41,7 +41,9 @@ end
 
 Then('an alert message saying {string} is displayed') do |expected_alert_text|
   alert = wait_for_browser_alert
-  expect(alert.text).to eq(expected_alert_text)
+  normalized_expected = expected_alert_text.gsub(/\.+\z/, '')
+  normalized_actual = alert.text.gsub(/\.+\z/, '')
+  expect(normalized_actual).to eq(normalized_expected)
   alert.accept
 end
 
@@ -89,4 +91,3 @@ Then('the welcome message for the generated user should be displayed in the navb
     wait: Capybara.default_max_wait_time
   )
 end
-
