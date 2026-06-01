@@ -3,19 +3,19 @@ Feature: Demoblaze User Access
   As a new customer
   I want to register my account and log in to the platform
 
-  Background: Enter to main Demoblaze main page
+  Background: Open the Demoblaze home page
     Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
 
 @smoke @maximize
 Scenario: User can sign up and log in successfully
-    And I click the "Sign up" link
-    When I enter the registration fields as show below
+    When I click the "Sign up" link
+    And I enter the registration fields as shown below
       | Username | AUTO_USER |
       | Password | AUTO_PASS |
     And I click the "Sign up" button in the modal
     Then an alert message saying "Sign up successful." is displayed
     And I click the "Log in" link
-    When I enter the login credentials as show below
+    And I enter the login credentials as shown below
       | Username | AUTO_USER |
       | Password | AUTO_PASS |
     And I click the "Log in" button in the modal
@@ -23,14 +23,14 @@ Scenario: User can sign up and log in successfully
 
 @smoke
 Scenario: User cannot log in with an invalid password
-    And I click the "Sign up" link
-    When I enter the registration fields as show below
+    When I click the "Sign up" link
+    And I enter the registration fields as shown below
       | Username | AUTO_USER |
       | Password | AUTO_PASS |
     And I click the "Sign up" button in the modal
     Then an alert message saying "Sign up successful." is displayed
     And I click the "Log in" link
-    When I enter the login credentials as show below
+    And I enter the login credentials as shown below
       | Username | AUTO_USER |
       | Password | WrongPass123 |
     And I click the "Log in" button in the modal
@@ -38,8 +38,8 @@ Scenario: User cannot log in with an invalid password
 
 @smoke
 Scenario: User cannot log in with a non-existing user
-    And I click the "Log in" link
-    When I enter the login credentials as show below
+    When I click the "Log in" link
+    And I enter the login credentials as shown below
       | Username | AUTO_USER |
       | Password | AUTO_PASS |
     And I click the "Log in" button in the modal
@@ -56,8 +56,8 @@ Scenario: User can log out successfully
 
 @regression
 Scenario Outline: User cannot sign up with incomplete credentials
-    And I click the "Sign up" link
-    When I enter the registration fields as show below
+    When I click the "Sign up" link
+    And I enter the registration fields as shown below
       | Username | <Username> |
       | Password | <Password> |
     And I click the "Sign up" button in the modal

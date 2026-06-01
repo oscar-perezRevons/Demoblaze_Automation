@@ -3,9 +3,11 @@ Feature: Demoblaze Store App
   As a customer
   I want to browse products and manage my cart
 
+  Background: Open the Demoblaze home page
+    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+
 @smoke
 Scenario: User can browse laptops and open a product detail
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I filter products by category "Laptops"
     Then I should see the product card "Sony vaio i5"
     When I open the product detail for "Sony vaio i5"
@@ -14,7 +16,6 @@ Scenario: User can browse laptops and open a product detail
 
 @smoke @cart
 Scenario Outline: User can add a product to cart from product detail
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "<Product>"
     And I add the current product to the cart
     Then an alert message saying "Product added" is displayed
@@ -27,7 +28,6 @@ Examples:
 
 @regression @cart
 Scenario: User can remove a product from cart
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "Nokia lumia 1520"
     And I add the current product to the cart
     Then an alert message saying "Product added" is displayed

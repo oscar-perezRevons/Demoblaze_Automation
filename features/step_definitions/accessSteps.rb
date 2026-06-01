@@ -91,7 +91,7 @@ Given('I click the {string} link') do |link_text|
   end
 end
 
-When('I enter the registration fields as show below') do |table|
+When('I enter the registration fields as shown below') do |table|
   data = table.rows_hash
   fill_in 'sign-username', with: resolve_dynamic_value(data['Username'])
   fill_in 'sign-password', with: resolve_dynamic_value(data['Password'])
@@ -109,7 +109,7 @@ Then('an alert message saying {string} is displayed') do |expected_alert_text|
   alert.accept
 end
 
-When('I enter the login credentials as show below') do |table|
+When('I enter the login credentials as shown below') do |table|
   data = table.rows_hash
   fill_in 'loginusername', with: resolve_dynamic_value(data['Username'])
   fill_in 'loginpassword', with: resolve_dynamic_value(data['Password'])

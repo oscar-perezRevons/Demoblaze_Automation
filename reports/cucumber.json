@@ -9,7 +9,7 @@
     "elements": [
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -23,7 +23,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1820838000
+              "duration": 1787652500
             }
           }
         ],
@@ -34,7 +34,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21600
+              "duration": 46200
             }
           },
           {
@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19600
+              "duration": 22900
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3734894300
+              "duration": 4711302900
             }
           }
         ]
@@ -66,7 +66,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Sign up\" link",
             "line": 11,
             "match": {
@@ -74,12 +74,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 125247300
+              "duration": 158292500
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the registration fields as show below",
+            "keyword": "And ",
+            "name": "I enter the registration fields as shown below",
             "line": 12,
             "rows": [
               {
@@ -100,7 +100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 295689300
+              "duration": 311587500
             }
           },
           {
@@ -112,7 +112,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170581500
+              "duration": 153987000
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1183021900
+              "duration": 743886800
             }
           },
           {
@@ -136,12 +136,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173845200
+              "duration": 190667000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the login credentials as show below",
+            "keyword": "And ",
+            "name": "I enter the login credentials as shown below",
             "line": 18,
             "rows": [
               {
@@ -162,7 +162,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 293062800
+              "duration": 299769900
             }
           },
           {
@@ -174,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138282500
+              "duration": 157982900
             }
           },
           {
@@ -186,7 +186,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1537328800
+              "duration": 1456053500
             }
           }
         ],
@@ -207,7 +207,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 157755800
+              "duration": 154227600
             }
           },
           {
@@ -216,14 +216,14 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19700
+              "duration": 21400
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -237,7 +237,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 356686900
+              "duration": 132482400
             }
           }
         ],
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14300
+              "duration": 20700
             }
           },
           {
@@ -257,7 +257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16700
+              "duration": 18200
             }
           }
         ]
@@ -271,7 +271,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Sign up\" link",
             "line": 26,
             "match": {
@@ -279,12 +279,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107506400
+              "duration": 126569400
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the registration fields as show below",
+            "keyword": "And ",
+            "name": "I enter the registration fields as shown below",
             "line": 27,
             "rows": [
               {
@@ -305,7 +305,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 323138200
+              "duration": 269205200
             }
           },
           {
@@ -317,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138501000
+              "duration": 143174000
             }
           },
           {
@@ -329,7 +329,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 504388000
+              "duration": 489224100
             }
           },
           {
@@ -341,12 +341,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173862700
+              "duration": 174236000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the login credentials as show below",
+            "keyword": "And ",
+            "name": "I enter the login credentials as shown below",
             "line": 33,
             "rows": [
               {
@@ -367,7 +367,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 316318100
+              "duration": 299930800
             }
           },
           {
@@ -379,7 +379,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141290900
+              "duration": 141697600
             }
           },
           {
@@ -391,7 +391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 266313200
+              "duration": 268836200
             }
           }
         ],
@@ -408,7 +408,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156448100
+              "duration": 141871100
             }
           },
           {
@@ -417,14 +417,14 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43800
+              "duration": 30600
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -438,7 +438,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417122600
+              "duration": 616604100
             }
           }
         ],
@@ -449,7 +449,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31800
+              "duration": 18700
             }
           },
           {
@@ -458,7 +458,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25800
+              "duration": 17000
             }
           }
         ]
@@ -472,7 +472,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Log in\" link",
             "line": 41,
             "match": {
@@ -480,12 +480,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 123216800
+              "duration": 109780100
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the login credentials as show below",
+            "keyword": "And ",
+            "name": "I enter the login credentials as shown below",
             "line": 42,
             "rows": [
               {
@@ -506,7 +506,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 316273900
+              "duration": 284130200
             }
           },
           {
@@ -518,7 +518,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 155722200
+              "duration": 155520300
             }
           },
           {
@@ -530,7 +530,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 487098700
+              "duration": 265749400
             }
           }
         ],
@@ -547,7 +547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141461400
+              "duration": 141621100
             }
           },
           {
@@ -556,14 +556,14 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26800
+              "duration": 29600
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -577,7 +577,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 547417600
+              "duration": 404411900
             }
           }
         ],
@@ -588,7 +588,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35300
+              "duration": 25600
             }
           },
           {
@@ -597,7 +597,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23100
+              "duration": 21700
             }
           }
         ]
@@ -619,7 +619,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3824755000
+              "duration": 3520153900
             }
           },
           {
@@ -631,7 +631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63118100
+              "duration": 63046200
             }
           },
           {
@@ -643,7 +643,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 62982000
+              "duration": 47693800
             }
           },
           {
@@ -655,7 +655,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 407225900
+              "duration": 631841000
             }
           },
           {
@@ -667,7 +667,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 77923100
+              "duration": 62577000
             }
           },
           {
@@ -679,7 +679,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30842600
+              "duration": 31009200
             }
           }
         ],
@@ -696,7 +696,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 143199800
+              "duration": 142666100
             }
           },
           {
@@ -705,14 +705,14 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28000
+              "duration": 36100
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -726,7 +726,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 358551300
+              "duration": 356473100
             }
           }
         ],
@@ -737,7 +737,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23500
+              "duration": 36100
             }
           },
           {
@@ -746,7 +746,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25000
+              "duration": 24700
             }
           }
         ]
@@ -760,7 +760,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Sign up\" link",
             "line": 59,
             "match": {
@@ -768,12 +768,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142799100
+              "duration": 110662400
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the registration fields as show below",
+            "keyword": "And ",
+            "name": "I enter the registration fields as shown below",
             "line": 60,
             "rows": [
               {
@@ -794,7 +794,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 283490900
+              "duration": 284593500
             }
           },
           {
@@ -806,7 +806,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109941600
+              "duration": 111019900
             }
           },
           {
@@ -818,7 +818,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 61214100
+              "duration": 63698300
             }
           }
         ],
@@ -835,7 +835,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139978000
+              "duration": 155276800
             }
           },
           {
@@ -844,14 +844,14 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20700
+              "duration": 25700
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
@@ -865,7 +865,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 344451700
+              "duration": 391742400
             }
           }
         ],
@@ -876,7 +876,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15700
+              "duration": 22600
             }
           },
           {
@@ -885,7 +885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18900
+              "duration": 18500
             }
           }
         ]
@@ -899,7 +899,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Sign up\" link",
             "line": 59,
             "match": {
@@ -907,12 +907,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156927500
+              "duration": 127124900
             }
           },
           {
-            "keyword": "When ",
-            "name": "I enter the registration fields as show below",
+            "keyword": "And ",
+            "name": "I enter the registration fields as shown below",
             "line": 60,
             "rows": [
               {
@@ -933,7 +933,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 279909500
+              "duration": 286132500
             }
           },
           {
@@ -945,7 +945,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 126491500
+              "duration": 109554900
             }
           },
           {
@@ -957,7 +957,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47730500
+              "duration": 62673100
             }
           }
         ],
@@ -974,7 +974,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156503200
+              "duration": 142221400
             }
           },
           {
@@ -983,7 +983,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26400
+              "duration": 36800
             }
           }
         ]
@@ -999,110 +999,119 @@
     "line": 1,
     "elements": [
       {
-        "id": "demoblaze-store-app;user-can-browse-laptops-and-open-a-product-detail",
-        "keyword": "Scenario",
-        "name": "User can browse laptops and open a product detail",
+        "keyword": "Background",
+        "name": "Open the Demoblaze home page",
         "description": "",
-        "line": 7,
-        "type": "scenario",
+        "line": 6,
+        "type": "background",
         "steps": [
           {
             "keyword": "Given ",
             "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
-            "line": 8,
+            "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 140269800
+              "duration": 314076900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
             }
           },
           {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21500
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-store-app;user-can-browse-laptops-and-open-a-product-detail",
+        "keyword": "Scenario",
+        "name": "User can browse laptops and open a product detail",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
             "keyword": "When ",
             "name": "I filter products by category \"Laptops\"",
-            "line": 9,
+            "line": 11,
             "match": {
               "location": "features/step_definitions/appSteps.rb:1"
             },
             "result": {
               "status": "passed",
-              "duration": 188196200
+              "duration": 141323300
             }
           },
           {
             "keyword": "Then ",
             "name": "I should see the product card \"Sony vaio i5\"",
-            "line": 10,
+            "line": 12,
             "match": {
               "location": "features/step_definitions/appSteps.rb:5"
             },
             "result": {
               "status": "passed",
-              "duration": 222112500
+              "duration": 62799000
             }
           },
           {
             "keyword": "When ",
             "name": "I open the product detail for \"Sony vaio i5\"",
-            "line": 11,
+            "line": 13,
             "match": {
               "location": "features/step_definitions/appSteps.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 690796400
+              "duration": 680454300
             }
           },
           {
             "keyword": "Then ",
             "name": "the product detail title should be \"Sony vaio i5\"",
-            "line": 12,
+            "line": 14,
             "match": {
               "location": "features/step_definitions/appSteps.rb:13"
             },
             "result": {
               "status": "passed",
-              "duration": 561627300
+              "duration": 561656300
             }
           },
           {
             "keyword": "And ",
             "name": "the \"Add to cart\" action should be visible",
-            "line": 13,
+            "line": 15,
             "match": {
               "location": "features/step_definitions/appSteps.rb:17"
             },
             "result": {
               "status": "passed",
-              "duration": 31668500
+              "duration": 32257900
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 6
-          }
-        ],
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20300
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 19700
-            }
+            "line": 9
           }
         ],
         "after": [
@@ -1112,7 +1121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141104000
+              "duration": 140928100
             }
           },
           {
@@ -1121,253 +1130,29 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20800
+              "duration": 24300
             }
           }
         ]
       },
       {
-        "id": "demoblaze-store-app;user-can-add-a-product-to-cart-from-product-detail;;2",
-        "keyword": "Scenario Outline",
-        "name": "User can add a product to cart from product detail",
+        "keyword": "Background",
+        "name": "Open the Demoblaze home page",
         "description": "",
-        "line": 26,
-        "type": "scenario",
+        "line": 6,
+        "type": "background",
         "steps": [
           {
             "keyword": "Given ",
             "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
-            "line": 17,
+            "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 78847600
+              "duration": 300368400
             }
-          },
-          {
-            "keyword": "When ",
-            "name": "I open the product detail for \"Samsung galaxy s6\"",
-            "line": 18,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1350433000
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "I add the current product to the cart",
-            "line": 19,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 410752900
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Product added\" is displayed",
-            "line": 20,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:104"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 718094100
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I go to the cart page",
-            "line": 21,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 202293400
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the cart should contain the product \"Samsung galaxy s6\"",
-            "line": 22,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1058914800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke",
-            "line": 15
-          },
-          {
-            "name": "@cart",
-            "line": 15
-          }
-        ],
-        "before": [
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13600
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 16900
-            }
-          },
-          {
-            "match": {
-              "location": "features/support/hooks.rb:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1496598400
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "features/support/hooks.rb:1"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 158018200
-            }
-          },
-          {
-            "match": {
-              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 21700
-            }
-          }
-        ]
-      },
-      {
-        "id": "demoblaze-store-app;user-can-remove-a-product-from-cart",
-        "keyword": "Scenario",
-        "name": "User can remove a product from cart",
-        "description": "",
-        "line": 29,
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
-            "line": 30,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 331020200
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I open the product detail for \"Nokia lumia 1520\"",
-            "line": 31,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 751877200
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "I add the current product to the cart",
-            "line": 32,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 672622900
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Product added\" is displayed",
-            "line": 33,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:104"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 707755100
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I go to the cart page",
-            "line": 34,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 453559800
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "I remove the product \"Nokia lumia 1520\" from the cart",
-            "line": 35,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1103221900
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the cart should not contain the product \"Nokia lumia 1520\"",
-            "line": 36,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 813785400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 28
-          },
-          {
-            "name": "@cart",
-            "line": 28
           }
         ],
         "before": [
@@ -1386,7 +1171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20000
+              "duration": 18600
             }
           },
           {
@@ -1395,8 +1180,88 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1665632500
+              "duration": 1414006700
             }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-store-app;user-can-add-a-product-to-cart-from-product-detail;;2",
+        "keyword": "Scenario Outline",
+        "name": "User can add a product to cart from product detail",
+        "description": "",
+        "line": 27,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Samsung galaxy s6\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1293922700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the current product to the cart",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 381798000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Product added\" is displayed",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714627500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 678030800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should contain the product \"Samsung galaxy s6\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 809542000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 17
+          },
+          {
+            "name": "@cart",
+            "line": 17
           }
         ],
         "after": [
@@ -1406,7 +1271,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 154570100
+              "duration": 157479500
             }
           },
           {
@@ -1415,38 +1280,28 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36200
+              "duration": 27000
             }
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "categorie-filter-navigation",
-    "uri": "features/categorie.feature",
-    "keyword": "Feature",
-    "name": "Categorie Filter Navigation",
-    "description": "  As a customer\n  I want to be able to navigate through the different categories of products\n  So that I can easily find the products I am interested in",
-    "line": 1,
-    "elements": [
+      },
       {
         "keyword": "Background",
-        "name": "",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
             "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 896603700
+              "duration": 78237500
             }
           }
         ],
@@ -1457,7 +1312,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24200
+              "duration": 19800
             }
           },
           {
@@ -1466,7 +1321,179 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24400
+              "duration": 28600
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1450302400
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-store-app;user-can-remove-a-product-from-cart",
+        "keyword": "Scenario",
+        "name": "User can remove a product from cart",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Nokia lumia 1520\"",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1041862500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the current product to the cart",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 666042100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Product added\" is displayed",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708281200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487602200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I remove the product \"Nokia lumia 1520\" from the cart",
+            "line": 35,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1112162600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should not contain the product \"Nokia lumia 1520\"",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 799949600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 29
+          },
+          {
+            "name": "@cart",
+            "line": 29
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152606200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27900
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "categories-filter-navigation",
+    "uri": "features/categories.feature",
+    "keyword": "Feature",
+    "name": "Categories Filter Navigation",
+    "description": "  As a customer\n  I want to be able to navigate through the different categories of products\n  So that I can easily find the products I am interested in",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Open the Demoblaze home page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 895280500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23100
             }
           },
           {
@@ -1475,15 +1502,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12884600
+              "duration": 12779100
             }
           }
         ]
       },
       {
-        "id": "categorie-filter-navigation;navegate-to-phones-category",
+        "id": "categories-filter-navigation;navigate-to-phones-category",
         "keyword": "Scenario",
-        "name": "Navegate to Phones category",
+        "name": "Navigate to Phones category",
         "description": "",
         "line": 10,
         "type": "scenario",
@@ -1497,7 +1524,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106480300
+              "duration": 153583200
             }
           },
           {
@@ -1529,7 +1556,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 341714500
+              "duration": 265514200
             }
           }
         ],
@@ -1550,7 +1577,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138610400
+              "duration": 153002500
             }
           },
           {
@@ -1559,28 +1586,28 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33100
+              "duration": 25000
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
             "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 140399900
+              "duration": 327498100
             }
           }
         ],
@@ -1591,7 +1618,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35300
+              "duration": 26000
             }
           },
           {
@@ -1600,7 +1627,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33500
+              "duration": 27200
             }
           },
           {
@@ -1609,15 +1636,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12621900
+              "duration": 11636300
             }
           }
         ]
       },
       {
-        "id": "categorie-filter-navigation;navegate-to-laptops-category",
+        "id": "categories-filter-navigation;navigate-to-laptops-category",
         "keyword": "Scenario",
-        "name": "Navegate to Laptops category",
+        "name": "Navigate to Laptops category",
         "description": "",
         "line": 18,
         "type": "scenario",
@@ -1631,7 +1658,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153437800
+              "duration": 109662900
             }
           },
           {
@@ -1663,7 +1690,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 528130900
+              "duration": 513152200
             }
           }
         ],
@@ -1684,7 +1711,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139737500
+              "duration": 138212600
             }
           },
           {
@@ -1693,28 +1720,28 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28500
+              "duration": 22800
             }
           }
         ]
       },
       {
         "keyword": "Background",
-        "name": "",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
             "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 157716000
+              "duration": 123112800
             }
           }
         ],
@@ -1734,7 +1761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22300
+              "duration": 21200
             }
           },
           {
@@ -1743,15 +1770,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13316600
+              "duration": 12447800
             }
           }
         ]
       },
       {
-        "id": "categorie-filter-navigation;navegate-to-monitors-category",
+        "id": "categories-filter-navigation;navigate-to-monitors-category",
         "keyword": "Scenario",
-        "name": "Navegate to Monitors category",
+        "name": "Navigate to Monitors category",
         "description": "",
         "line": 26,
         "type": "scenario",
@@ -1765,7 +1792,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 152611300
+              "duration": 125141900
             }
           },
           {
@@ -1797,7 +1824,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 280679600
+              "duration": 280379700
             }
           }
         ],
@@ -1818,7 +1845,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140486900
+              "duration": 142330100
             }
           },
           {
@@ -1827,7 +1854,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23700
+              "duration": 24400
             }
           }
         ]
@@ -1844,21 +1871,21 @@
     "elements": [
       {
         "keyword": "Background",
-        "name": "",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
             "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 325510900
+              "duration": 371925900
             }
           }
         ],
@@ -1869,7 +1896,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17100
+              "duration": 15700
             }
           },
           {
@@ -1878,7 +1905,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16100
+              "duration": 18200
             }
           },
           {
@@ -1887,7 +1914,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12013700
+              "duration": 13873100
             }
           }
         ]
@@ -1901,7 +1928,7 @@
         "type": "scenario",
         "steps": [
           {
-            "keyword": "And ",
+            "keyword": "When ",
             "name": "I click the \"Contact\" link in the navbar",
             "line": 11,
             "match": {
@@ -1909,11 +1936,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138520600
+              "duration": 154981300
             }
           },
           {
-            "keyword": "When ",
+            "keyword": "And ",
             "name": "I fill out the form with the following details",
             "line": 12,
             "rows": [
@@ -1941,7 +1968,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 390316000
+              "duration": 420823000
             }
           },
           {
@@ -1953,7 +1980,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 125864000
+              "duration": 141574300
             }
           },
           {
@@ -1965,11 +1992,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46784600
+              "duration": 46392400
             }
           }
         ],
         "tags": [
+          {
+            "name": "@regression",
+            "line": 9
+          },
           {
             "name": "@maximize",
             "line": 9
@@ -1982,7 +2013,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142291000
+              "duration": 139182500
             }
           },
           {
@@ -1991,7 +2022,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31900
+              "duration": 32500
             }
           }
         ]
@@ -2008,21 +2039,21 @@
     "elements": [
       {
         "keyword": "Background",
-        "name": "Enter to main Demoblaze main page",
+        "name": "Open the Demoblaze home page",
         "description": "",
         "line": 6,
         "type": "background",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
             "line": 7,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:69"
             },
             "result": {
               "status": "passed",
-              "duration": 422437400
+              "duration": 435453500
             }
           }
         ],
@@ -2033,7 +2064,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55700
+              "duration": 39200
             }
           },
           {
@@ -2042,7 +2073,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44200
+              "duration": 40000
             }
           },
           {
@@ -2051,15 +2082,15 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25591700
+              "duration": 11101800
             }
           }
         ]
       },
       {
-        "id": "demoblaze-home-page;access-to-the-homepage-and-verify-main-elements",
+        "id": "demoblaze-home-page;access-the-homepage-and-verify-main-elements",
         "keyword": "Scenario",
-        "name": "Access to the homepage and verify main elements",
+        "name": "Access the homepage and verify main elements",
         "description": "",
         "line": 10,
         "type": "scenario",
@@ -2095,7 +2126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 202901800
+              "duration": 186156200
             }
           },
           {
@@ -2133,7 +2164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 378133800
+              "duration": 405481700
             }
           }
         ],
@@ -2154,7 +2185,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141336900
+              "duration": 139978800
             }
           },
           {
@@ -2163,7 +2194,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23700
+              "duration": 30600
             }
           }
         ]
@@ -2195,7 +2226,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4134289500
+              "duration": 4167643200
             }
           },
           {
@@ -2207,7 +2238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 653214800
+              "duration": 683556000
             }
           },
           {
@@ -2219,7 +2250,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 690144400
+              "duration": 627758300
             }
           },
           {
@@ -2231,7 +2262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 727718300
+              "duration": 712284300
             }
           },
           {
@@ -2243,7 +2274,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 913529400
+              "duration": 739833000
             }
           },
           {
@@ -2293,7 +2324,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1019420100
+              "duration": 1008868800
             }
           },
           {
@@ -2305,7 +2336,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 473704000
+              "duration": 469113800
             }
           },
           {
@@ -2317,7 +2348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 674082900
+              "duration": 914604200
             }
           }
         ],
@@ -2342,7 +2373,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19500
+              "duration": 25900
             }
           },
           {
@@ -2351,7 +2382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24300
+              "duration": 25800
             }
           },
           {
@@ -2360,7 +2391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1488294000
+              "duration": 1135609200
             }
           },
           {
@@ -2369,7 +2400,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15593000
+              "duration": 15648000
             }
           }
         ],
@@ -2380,7 +2411,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156793800
+              "duration": 157427200
             }
           },
           {
@@ -2389,7 +2420,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32200
+              "duration": 23400
             }
           }
         ]
