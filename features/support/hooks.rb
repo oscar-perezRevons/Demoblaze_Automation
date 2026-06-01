@@ -4,7 +4,7 @@ After do
 end
 
 Before '@cart' do
-  visit 'https://www.demoblaze.com/index.html'
+  visit Constants::APP_URL
   click_link('Cart')
   expect(page).to have_text('Products', wait: Capybara.default_max_wait_time)
 

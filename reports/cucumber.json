@@ -1,0 +1,2399 @@
+[
+  {
+    "id": "demoblaze-user-access",
+    "uri": "features/access.feature",
+    "keyword": "Feature",
+    "name": "Demoblaze User Access",
+    "description": "  In order to buy products in the store\n  As a new customer\n  I want to register my account and log in to the platform",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1820838000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19600
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3734894300
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-can-sign-up-and-log-in-successfully",
+        "keyword": "Scenario",
+        "name": "User can sign up and log in successfully",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" link",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125247300
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the registration fields as show below",
+            "line": 12,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "AUTO_USER"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "AUTO_PASS"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 295689300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" button in the modal",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170581500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Sign up successful.\" is displayed",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1183021900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" link",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173845200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the login credentials as show below",
+            "line": 18,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "AUTO_USER"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "AUTO_PASS"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293062800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" button in the modal",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138282500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the welcome message for the generated user should be displayed in the navbar",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:134"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1537328800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          },
+          {
+            "name": "@maximize",
+            "line": 9
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157755800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19700
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356686900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16700
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-cannot-log-in-with-an-invalid-password",
+        "keyword": "Scenario",
+        "name": "User cannot log in with an invalid password",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" link",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107506400
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the registration fields as show below",
+            "line": 27,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "AUTO_USER"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "AUTO_PASS"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 323138200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" button in the modal",
+            "line": 30,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138501000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Sign up successful.\" is displayed",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 504388000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" link",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173862700
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the login credentials as show below",
+            "line": 33,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "AUTO_USER"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "WrongPass123"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 316318100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" button in the modal",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141290900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Wrong password.\" is displayed",
+            "line": 37,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266313200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 24
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156448100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417122600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-cannot-log-in-with-a-non-existing-user",
+        "keyword": "Scenario",
+        "name": "User cannot log in with a non-existing user",
+        "description": "",
+        "line": 40,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" link",
+            "line": 41,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123216800
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the login credentials as show below",
+            "line": 42,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "AUTO_USER"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "AUTO_PASS"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 316273900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Log in\" button in the modal",
+            "line": 45,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155722200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"User does not exist.\" is displayed",
+            "line": 46,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487098700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 39
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141461400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547417600
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23100
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-can-log-out-successfully",
+        "keyword": "Scenario",
+        "name": "User can log out successfully",
+        "description": "",
+        "line": 49,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in with a newly registered user",
+            "line": 50,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3824755000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the \"Log out\" link should be visible in the navbar",
+            "line": 51,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63118100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the \"Log in\" link should not be visible in the navbar",
+            "line": 52,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:126"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62982000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I click the \"Log out\" link",
+            "line": 53,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 407225900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the \"Log in\" link should be visible in the navbar",
+            "line": 54,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77923100
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the welcome message should not be displayed in the navbar",
+            "line": 55,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30842600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 48
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143199800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358551300
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-cannot-sign-up-with-incomplete-credentials;;2",
+        "keyword": "Scenario Outline",
+        "name": "User cannot sign up with incomplete credentials",
+        "description": "",
+        "line": 68,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" link",
+            "line": 59,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142799100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the registration fields as show below",
+            "line": 60,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "<Username>"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "<Password>"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283490900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" button in the modal",
+            "line": 63,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109941600
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
+            "line": 64,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61214100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 57
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139978000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20700
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344451700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18900
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-user-access;user-cannot-sign-up-with-incomplete-credentials;;3",
+        "keyword": "Scenario Outline",
+        "name": "User cannot sign up with incomplete credentials",
+        "description": "",
+        "line": 69,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" link",
+            "line": 59,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156927500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the registration fields as show below",
+            "line": 60,
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "<Username>"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "<Password>"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279909500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Sign up\" button in the modal",
+            "line": 63,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126491500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
+            "line": 64,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47730500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 57
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156503200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26400
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "demoblaze-store-app",
+    "uri": "features/app.feature",
+    "keyword": "Feature",
+    "name": "Demoblaze Store App",
+    "description": "  In order to buy products in the store\n  As a customer\n  I want to browse products and manage my cart",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demoblaze-store-app;user-can-browse-laptops-and-open-a-product-detail",
+        "keyword": "Scenario",
+        "name": "User can browse laptops and open a product detail",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140269800
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I filter products by category \"Laptops\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188196200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see the product card \"Sony vaio i5\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222112500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Sony vaio i5\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 690796400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the product detail title should be \"Sony vaio i5\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561627300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the \"Add to cart\" action should be visible",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31668500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141104000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20800
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-store-app;user-can-add-a-product-to-cart-from-product-detail;;2",
+        "keyword": "Scenario Outline",
+        "name": "User can add a product to cart from product detail",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78847600
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Samsung galaxy s6\"",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1350433000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the current product to the cart",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410752900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Product added\" is displayed",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718094100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202293400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should contain the product \"Samsung galaxy s6\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1058914800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 15
+          },
+          {
+            "name": "@cart",
+            "line": 15
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1496598400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158018200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21700
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-store-app;user-can-remove-a-product-from-cart",
+        "keyword": "Scenario",
+        "name": "User can remove a product from cart",
+        "description": "",
+        "line": 29,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com/index.html\"",
+            "line": 30,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331020200
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Nokia lumia 1520\"",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 751877200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the current product to the cart",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 672622900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Product added\" is displayed",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 707755100
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 453559800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I remove the product \"Nokia lumia 1520\" from the cart",
+            "line": 35,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1103221900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the cart should not contain the product \"Nokia lumia 1520\"",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 813785400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 28
+          },
+          {
+            "name": "@cart",
+            "line": 28
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1665632500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154570100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "categorie-filter-navigation",
+    "uri": "features/categorie.feature",
+    "keyword": "Feature",
+    "name": "Categorie Filter Navigation",
+    "description": "  As a customer\n  I want to be able to navigate through the different categories of products\n  So that I can easily find the products I am interested in",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896603700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12884600
+            }
+          }
+        ]
+      },
+      {
+        "id": "categorie-filter-navigation;navegate-to-phones-category",
+        "keyword": "Scenario",
+        "name": "Navegate to Phones category",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I click the \"Phones\" category link in the sidebar",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106480300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a list of products related to the \"Phones\" category at the top",
+            "line": 12,
+            "rows": [
+              {
+                "cells": [
+                  "Product Name",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Samsung galaxy s6",
+                  "$360"
+                ]
+              },
+              {
+                "cells": [
+                  "Nokia lumia 1520",
+                  "$820"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341714500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          },
+          {
+            "name": "@maximize",
+            "line": 9
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138610400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33100
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140399900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12621900
+            }
+          }
+        ]
+      },
+      {
+        "id": "categorie-filter-navigation;navegate-to-laptops-category",
+        "keyword": "Scenario",
+        "name": "Navegate to Laptops category",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I click the \"Laptops\" category link in the sidebar",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153437800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a list of products related to the \"Laptops\" category at the top",
+            "line": 20,
+            "rows": [
+              {
+                "cells": [
+                  "Product Name",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Sony vaio i5",
+                  "$790"
+                ]
+              },
+              {
+                "cells": [
+                  "MacBook Pro",
+                  "$1100"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 528130900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 17
+          },
+          {
+            "name": "@maximize",
+            "line": 17
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139737500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28500
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157716000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22300
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13316600
+            }
+          }
+        ]
+      },
+      {
+        "id": "categorie-filter-navigation;navegate-to-monitors-category",
+        "keyword": "Scenario",
+        "name": "Navegate to Monitors category",
+        "description": "",
+        "line": 26,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I click the \"Monitors\" category link in the sidebar",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152611300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see a list of products related to the \"Monitors\" category at the top",
+            "line": 28,
+            "rows": [
+              {
+                "cells": [
+                  "Product Name",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Apple monitor 24",
+                  "$400"
+                ]
+              },
+              {
+                "cells": [
+                  "ASUS Full HD",
+                  "$230"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/categoriesSteps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 280679600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 25
+          },
+          {
+            "name": "@maximize",
+            "line": 25
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140486900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23700
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "demoblaze-contact-and-support",
+    "uri": "features/contact.feature",
+    "keyword": "Feature",
+    "name": "Demoblaze Contact and Support",
+    "description": "  In order to get support and contact the store\n  As a customer\n  I want to be able to access the contact page and submit a message",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325510900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12013700
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-contact-and-support;send-a-message-through-the-contact-form",
+        "keyword": "Scenario",
+        "name": "Send a message through the contact form",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I click the \"Contact\" link in the navbar",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/contactSteps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138520600
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I fill out the form with the following details",
+            "line": 12,
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "camila.rojas@mail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "Camila Rojas"
+                ]
+              },
+              {
+                "cells": [
+                  "Message",
+                  "Consulta sobre tiempos de entrega."
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/contactSteps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390316000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the \"Send message\" button",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/contactSteps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125864000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Thanks for the message!!\" is displayed",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46784600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@maximize",
+            "line": 9
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142291000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31900
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "demoblaze-home-page",
+    "uri": "features/home.feature",
+    "keyword": "Feature",
+    "name": "Demoblaze Home Page",
+    "description": "  In order to navigate through the store\n  As a user\n  I want to access the homepage and see the main elements of the page",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Enter to main Demoblaze main page",
+        "description": "",
+        "line": 6,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the Demoblaze homepage \"https://www.demoblaze.com\"",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422437400
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44200
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25591700
+            }
+          }
+        ]
+      },
+      {
+        "id": "demoblaze-home-page;access-to-the-homepage-and-verify-main-elements",
+        "keyword": "Scenario",
+        "name": "Access to the homepage and verify main elements",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I should see the main categories in the left sidebar",
+            "line": 11,
+            "rows": [
+              {
+                "cells": [
+                  "Category Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Phones"
+                ]
+              },
+              {
+                "cells": [
+                  "Laptops"
+                ]
+              },
+              {
+                "cells": [
+                  "Monitors"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/homeStep.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202901800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see a product list without any category selected",
+            "line": 16,
+            "rows": [
+              {
+                "cells": [
+                  "Product Name",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Samsung galaxy s6",
+                  "$360"
+                ]
+              },
+              {
+                "cells": [
+                  "Nokia lumia 1520",
+                  "$820"
+                ]
+              },
+              {
+                "cells": [
+                  "Sony vaio i5",
+                  "$790"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/homeStep.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378133800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 9
+          },
+          {
+            "name": "@maximize",
+            "line": 9
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141336900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23700
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "demoblaze-product-purchase",
+    "uri": "features/purchase.feature",
+    "keyword": "Feature",
+    "name": "Demoblaze Product Purchase",
+    "description": "  In order to get my items delivered\n  As a logged-in customer\n  I want to checkout my cart and finalize the purchase",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demoblaze-product-purchase;successful-checkout-and-purchase-execution",
+        "keyword": "Scenario",
+        "name": "Successful checkout and purchase execution",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am logged in with a newly registered user",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4134289500
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I open the product detail for \"Samsung galaxy s6\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653214800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I add the current product to the cart",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 690144400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Product added.\" is displayed",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 727718300
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I go to the cart page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 913529400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I place an order with the details below",
+            "line": 15,
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Valeria Perez"
+                ]
+              },
+              {
+                "cells": [
+                  "Country",
+                  "Bolivia"
+                ]
+              },
+              {
+                "cells": [
+                  "City",
+                  "Cochabamba"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit card",
+                  "4578123412341234"
+                ]
+              },
+              {
+                "cells": [
+                  "Month",
+                  "05"
+                ]
+              },
+              {
+                "cells": [
+                  "Year",
+                  "2026"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1019420100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the purchase confirmation should be displayed",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 473704000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "the purchase confirmation should include \"Thank you for your purchase!\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/appSteps.rb:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674082900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@maximize",
+            "line": 6
+          },
+          {
+            "name": "@cart",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24300
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1488294000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15593000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156793800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

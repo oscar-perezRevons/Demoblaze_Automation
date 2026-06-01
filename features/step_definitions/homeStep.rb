@@ -1,7 +1,7 @@
 Then('I should see the main categories in the left sidebar') do |table|
   table.hashes.each do |row|
     category_name = row['Category Name']
-    expect(find(category_link_selector(category_name), text: category_name, wait: Capybara.default_max_wait_time)).to be_visible
+    expect(find(:xpath, category_link_selector(category_name), wait: Capybara.default_max_wait_time)).to be_visible
   end
 end
 

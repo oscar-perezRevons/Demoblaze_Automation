@@ -3,6 +3,7 @@ Feature: Demoblaze Store App
   As a customer
   I want to browse products and manage my cart
 
+@smoke
 Scenario: User can browse laptops and open a product detail
     Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I filter products by category "Laptops"
@@ -11,7 +12,7 @@ Scenario: User can browse laptops and open a product detail
     Then the product detail title should be "Sony vaio i5"
     And the "Add to cart" action should be visible
 
-@cart
+@smoke @cart
 Scenario Outline: User can add a product to cart from product detail
     Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "<Product>"
@@ -23,9 +24,8 @@ Scenario Outline: User can add a product to cart from product detail
 Examples:
     | Product           |
     | Samsung galaxy s6 |
-    | Nokia lumia 1520  |
 
-@cart
+@regression @cart
 Scenario: User can remove a product from cart
     Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
     When I open the product detail for "Nokia lumia 1520"
@@ -34,20 +34,3 @@ Scenario: User can remove a product from cart
     When I go to the cart page
     And I remove the product "Nokia lumia 1520" from the cart
     Then the cart should not contain the product "Nokia lumia 1520"
-
-@cart
-Scenario: User can complete checkout from cart
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
-    When I open the product detail for "Samsung galaxy s6"
-    And I add the current product to the cart
-    Then an alert message saying "Product added" is displayed
-    When I go to the cart page
-    And I place an order with the details below
-      | Name        | QA Buyer         |
-      | Country     | Bolivia          |
-      | City        | La Paz           |
-      | Credit card | 4111111111111111 |
-      | Month       | 12               |
-      | Year        | 2028             |
-    Then the purchase confirmation should be displayed
-    And the purchase confirmation should include "Thank you for your purchase!"

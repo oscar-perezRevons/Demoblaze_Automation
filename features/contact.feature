@@ -10,8 +10,8 @@ Feature: Demoblaze Contact and Support
     Scenario: Send a message through the contact form
       And I click the "Contact" link in the navbar
       When I fill out the form with the following details
-        | Email   | john.doe@example.com |
-        | Name    | John Doe             |
-        | Message | This is a test message. |
+        | Email   | camila.rojas@mail.com |
+        | Name    | Camila Rojas          |
+        | Message | Consulta sobre tiempos de entrega. |
         And I click the "Send message" button
         Then an alert message saying "Thanks for the message!!" is displayed

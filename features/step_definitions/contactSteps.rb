@@ -10,7 +10,7 @@ When('I fill out the form with the following details') do |table|
 end
 
 When('I click the {string} button') do |button_text|
-  selector = UiMaps::BUTTON_SELECTORS[button_text]
+  selector = Constants::BUTTON_SELECTORS[button_text]
 
   if selector
     find(selector, wait: Capybara.default_max_wait_time).click

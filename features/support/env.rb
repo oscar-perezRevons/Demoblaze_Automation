@@ -15,7 +15,7 @@ end
 
 ENV['BROWSER'] = selected_browser
 ENV['USER'] ||= 'Pepazo'
-ENV['PSW'] ||= 'ILoveQA'
+ENV['PSW'] ||= 'ClaveDemo2026!'
 
 NAVEGADOR_ACTUAL = ENV['BROWSER'].to_sym
 
