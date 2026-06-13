@@ -1,21 +1,19 @@
-begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations'; end
-require 'capybara'
-require 'capybara/dsl'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
+require 'rspec/expectations'
 
 SUPPORTED_BROWSERS = %w[firefox chrome].freeze
-
 selected_browser = ENV.fetch('BROWSER', 'firefox').strip.downcase
+
 unless SUPPORTED_BROWSERS.include?(selected_browser)
   raise ArgumentError,
-        "Unsupported BROWSER='#{ENV['BROWSER']}'. Supported values: #{SUPPORTED_BROWSERS.join(', ')}. " \
-        "Example: BROWSER=chrome cucumber"
+        "Unsupported BROWSER='#{ENV['BROWSER']}'. Supported values: #{SUPPORTED_BROWSERS.join(', ')}."
 end
 
 ENV['BROWSER'] = selected_browser
-ENV['USER'] ||= 'Pepazo'
-ENV['PSW'] ||= 'ClaveDemo2026!'
+ENV['USER'] = 'Revons'
+ENV['PSSW'] = 'Revons'
+ENV['DEFAULT_HOME_PAGE'] = 'https://www.demoblaze.com/'
 
 NAVEGADOR_ACTUAL = ENV['BROWSER'].to_sym
 
@@ -42,5 +40,8 @@ Capybara.default_driver = DRIVER_DINAMICO
 Capybara.javascript_driver = DRIVER_DINAMICO
 
 Capybara.default_max_wait_time = 15
-Capybara.app_host = 'https://www.demoblaze.com/'
+Capybara.app_host = ENV['DEFAULT_HOME_PAGE'] # Usamos la variable para la URL base
 Capybara.run_server = false
+
+# Capybara maneja la apertura y cierre del navegador automáticamente entre escenarios, 
+# por lo que ya no necesitas los bloques Before y After para instanciar/cerrar el driver.

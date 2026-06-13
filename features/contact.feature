@@ -4,7 +4,7 @@ Feature: Demoblaze Contact and Support
   I want to be able to access the contact page and submit a message
 
   Background: Open the Demoblaze home page
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage
 
 @regression @maximize
 Scenario: Send a message through the contact form

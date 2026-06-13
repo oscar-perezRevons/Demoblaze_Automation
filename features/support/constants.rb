@@ -1,7 +1,13 @@
 module Constants
-  APP_URL = 'https://www.demoblaze.com/index.html'.freeze
+  APP_URL = ENV['DEFAULT_HOME_PAGE'].freeze
   AUTO_USER_TOKEN = 'AUTO_USER'.freeze
   AUTO_PASS_TOKEN = 'AUTO_PASS'.freeze
+  
+  FIRST_NAMES = %w[maria carlos ana luis sofia diego paula marco laura andres].freeze
+
+  LAST_NAMES = %w[rios perez lopez vargas castro mendoza herrera flores torres guzman].freeze
+ 
+  ACCEPTED_SIGN_UP_MESSAGES = ['Sign up successful', 'This user already exist'].freeze
 
   NAVBAR_LINK_SELECTORS = {
     'Home' => '#navbarExample a[href="index.html"]',
@@ -10,7 +16,8 @@ module Constants
     'Cart' => '#cartur',
     'Log in' => '#login2',
     'Sign up' => '#signin2',
-    'Log out' => '#logout2'
+    'Log out' => '#logout2',
+    'Profile' => '#nameofuser'
   }.freeze
 
   CATEGORY_LINK_SELECTORS = {
@@ -24,7 +31,9 @@ module Constants
     'Add to cart' => 'a.btn.btn-success.btn-lg',
     'Send message' => '#exampleModal button.btn.btn-primary',
     'Next' => '#next2',
-    'Previous' => '#prev2'
+    'Previous' => '#prev2',
+    'Log in' => '#logInModal > div > div > div.modal-footer > button.btn.btn-primary',
+    'Sign up' => '#signInModal > div > div > div.modal-footer > button.btn.btn-primary'
   }.freeze
 
   CONTACT_FORM_SELECTORS = {
@@ -32,6 +41,17 @@ module Constants
     'Name' => '#recipient-name',
     'Message' => '#message-text'
   }.freeze
+
+  LOGIN_FORM_SELECTOR={
+    'Username' => '#loginusername',
+    'Password' => '#loginpassword',
+    'WelcomeMessage' => '#nameofuser'
+  }.freeze
+
+  SIGN_UP_FORM_SELECTOR={
+    'Username' => '#sign-username',
+    'Password' => '#sign-password'
+  }
 
   HOME_PRODUCTS = {
     'Samsung galaxy s6' => 'div.col-md-6:nth-child(1)',
@@ -70,6 +90,18 @@ def contact_form_selector(field_name)
   end
 end
 
+def login_form_selector(field_name)
+  Constants::LOGIN_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown Login form selector for '#{field_name}'"
+  end
+end
+
+def sign_up_form_selector(field_name)
+  Constants::SIGN_UP_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown Sign Up form selector for '#{field_name}'"
+  end
+end
+
 def home_product_name_selector(product_name)
   base_selector = Constants::HOME_PRODUCTS.fetch(product_name) do
     raise "Unknown home product selector for '#{product_name}'"
@@ -85,3 +117,4 @@ def home_product_price_selector(product_name)
 
   "#{base_selector} > div:nth-child(1) > div:nth-child(2) > h5:nth-child(2)"
 end
+

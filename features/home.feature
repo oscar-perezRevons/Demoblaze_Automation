@@ -4,7 +4,7 @@ Feature: Demoblaze Home Page
   I want to access the homepage and see the main elements of the page
 
   Background: Open the Demoblaze home page
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage
 
 @regression @maximize
 Scenario: Access the homepage and verify main elements
