@@ -56,8 +56,12 @@ Given('I am logged in with a newly registered user') do
   expect(auth_page).to have_welcome_message("Welcome #{username}")
 end
 
-When('I register with new valid credentials') do
-  auth_page.register(username: generated_username, password: generated_password)
+When('I register successfully and log in with new valid credentials') do
+  username = generated_username
+  password = generated_password
+
+  auth_page.register_and_accept(username: username, password: password)
+  auth_page.log_in(username: username, password: password)
 end
 
 Given('I click the {string} link') do |link_text|

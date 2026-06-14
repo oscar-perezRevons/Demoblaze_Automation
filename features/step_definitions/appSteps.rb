@@ -18,8 +18,10 @@ Then('the {string} action should be visible') do |action_text|
   expect(product_page).to have_action(action_text)
 end
 
-When('I add the current product to the cart') do
+When('I add the current product to the cart successfully') do
   product_page.add_to_cart
+  actual_alert_text = base_page.normalize_alert_text(base_page.read_and_accept_alert)
+  expect(actual_alert_text).to eq('Product added')
 end
 
 When('I go to the cart page') do

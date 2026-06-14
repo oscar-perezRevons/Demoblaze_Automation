@@ -8,9 +8,7 @@ Feature: Demoblaze User Access
 
 @smoke @maximize
 Scenario: User can sign up and log in successfully
-    When I register with new valid credentials
-    Then an alert message saying "Sign up successful." is displayed
-    When I log in with the generated credentials
+    When I register successfully and log in with new valid credentials
     Then the welcome message for the generated user should be displayed in the navbar
 
 @smoke

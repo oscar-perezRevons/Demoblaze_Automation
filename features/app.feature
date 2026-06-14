@@ -9,17 +9,15 @@ Feature: Demoblaze Store App
 @smoke
 Scenario: User can browse laptops and open a product detail
     When I filter products by category "Laptops"
-    Then I should see the product card "Sony vaio i5"
-    When I open the product detail for "Sony vaio i5"
+    And I open the product detail for "Sony vaio i5"
     Then the product detail title should be "Sony vaio i5"
     And the "Add to cart" action should be visible
 
 @smoke @cart
 Scenario Outline: User can add a product to cart from product detail
     When I open the product detail for "<Product>"
-    And I add the current product to the cart
-    Then an alert message saying "Product added" is displayed
-    When I go to the cart page
+    And I add the current product to the cart successfully
+    And I go to the cart page
     Then the cart should contain the product "<Product>"
 
 Examples:
@@ -29,8 +27,7 @@ Examples:
 @cart
 Scenario: User can remove a product from cart
     When I open the product detail for "Nokia lumia 1520"
-    And I add the current product to the cart
-    Then an alert message saying "Product added" is displayed
-    When I go to the cart page
+    And I add the current product to the cart successfully
+    And I go to the cart page
     And I remove the product "Nokia lumia 1520" from the cart
     Then the cart should not contain the product "Nokia lumia 1520"

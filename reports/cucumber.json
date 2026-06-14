@@ -23,7 +23,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1874704300
+              "duration": 2253309200
             }
           }
         ],
@@ -34,7 +34,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26300
+              "duration": 25600
             }
           },
           {
@@ -43,7 +43,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19300
+              "duration": 18800
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3548715000
+              "duration": 3524783500
             }
           }
         ]
@@ -67,50 +67,26 @@
         "steps": [
           {
             "keyword": "When ",
-            "name": "I register with new valid credentials",
+            "name": "I register successfully and log in with new valid credentials",
             "line": 11,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:59"
             },
             "result": {
               "status": "passed",
-              "duration": 610054100
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Sign up successful.\" is displayed",
-            "line": 12,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1372431500
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I log in with the generated credentials",
-            "line": 13,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:94"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 626691200
+              "duration": 1931354700
             }
           },
           {
             "keyword": "Then ",
             "name": "the welcome message for the generated user should be displayed in the navbar",
-            "line": 14,
+            "line": 12,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:125"
+              "location": "features/step_definitions/accessSteps.rb:129"
             },
             "result": {
               "status": "passed",
-              "duration": 2191094400
+              "duration": 2032062200
             }
           }
         ],
@@ -131,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158531100
+              "duration": 156277300
             }
           },
           {
@@ -140,7 +116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29000
+              "duration": 20400
             }
           }
         ]
@@ -161,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 846720500
+              "duration": 972145100
             }
           }
         ],
@@ -172,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19600
+              "duration": 13500
             }
           },
           {
@@ -181,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21800
+              "duration": 16200
             }
           }
         ]
@@ -191,50 +167,50 @@
         "keyword": "Scenario",
         "name": "User cannot log in with an invalid password",
         "description": "",
-        "line": 17,
+        "line": 15,
         "type": "scenario",
         "steps": [
           {
             "keyword": "Given ",
             "name": "I have a newly registered user account",
-            "line": 18,
+            "line": 16,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:43"
             },
             "result": {
               "status": "passed",
-              "duration": 2143754700
+              "duration": 2370855900
             }
           },
           {
             "keyword": "When ",
             "name": "I log in with the generated username and password \"WrongPass123\"",
-            "line": 19,
+            "line": 17,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:98"
+              "location": "features/step_definitions/accessSteps.rb:102"
             },
             "result": {
               "status": "passed",
-              "duration": 698752200
+              "duration": 654124500
             }
           },
           {
             "keyword": "Then ",
             "name": "an alert message saying \"Wrong password.\" is displayed",
-            "line": 20,
+            "line": 18,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
+              "location": "features/step_definitions/accessSteps.rb:83"
             },
             "result": {
               "status": "passed",
-              "duration": 710691600
+              "duration": 720709700
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 16
+            "line": 14
           }
         ],
         "after": [
@@ -244,7 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142937000
+              "duration": 141280000
             }
           },
           {
@@ -253,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28500
+              "duration": 24300
             }
           }
         ]
@@ -274,7 +250,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1069170500
+              "duration": 914999200
             }
           }
         ],
@@ -285,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18300
+              "duration": 14300
             }
           },
           {
@@ -294,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19100
+              "duration": 16700
             }
           }
         ]
@@ -304,38 +280,38 @@
         "keyword": "Scenario",
         "name": "User cannot log in with a non-existing user",
         "description": "",
-        "line": 23,
+        "line": 21,
         "type": "scenario",
         "steps": [
           {
             "keyword": "When ",
             "name": "I log in with a generated user that is not registered",
-            "line": 24,
+            "line": 22,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:102"
+              "location": "features/step_definitions/accessSteps.rb:106"
             },
             "result": {
               "status": "passed",
-              "duration": 585040300
+              "duration": 598871000
             }
           },
           {
             "keyword": "Then ",
             "name": "an alert message saying \"User does not exist.\" is displayed",
-            "line": 25,
+            "line": 23,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
+              "location": "features/step_definitions/accessSteps.rb:83"
             },
             "result": {
               "status": "passed",
-              "duration": 503325900
+              "duration": 269399200
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 22
+            "line": 20
           }
         ],
         "after": [
@@ -345,7 +321,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 159365800
+              "duration": 140056900
             }
           },
           {
@@ -354,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22300
+              "duration": 19500
             }
           }
         ]
@@ -375,7 +351,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 867263100
+              "duration": 928742600
             }
           }
         ],
@@ -386,7 +362,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16500
+              "duration": 14500
             }
           },
           {
@@ -395,7 +371,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15700
+              "duration": 18700
             }
           }
         ]
@@ -405,62 +381,62 @@
         "keyword": "Scenario",
         "name": "User can log out successfully",
         "description": "",
-        "line": 28,
+        "line": 26,
         "type": "scenario",
         "steps": [
           {
             "keyword": "Given ",
             "name": "I am logged in with a newly registered user",
-            "line": 29,
+            "line": 27,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:48"
             },
             "result": {
               "status": "passed",
-              "duration": 5022850200
+              "duration": 5272191400
             }
           },
           {
             "keyword": "When ",
             "name": "I click the \"Log out\" link",
-            "line": 30,
+            "line": 28,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:63"
+              "location": "features/step_definitions/accessSteps.rb:67"
             },
             "result": {
               "status": "passed",
-              "duration": 903032400
+              "duration": 1072543500
             }
           },
           {
             "keyword": "Then ",
             "name": "the \"Log in\" link should be visible in the navbar",
-            "line": 31,
+            "line": 29,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:113"
+              "location": "features/step_definitions/accessSteps.rb:117"
             },
             "result": {
               "status": "passed",
-              "duration": 77951000
+              "duration": 61641200
             }
           },
           {
             "keyword": "And ",
             "name": "the welcome message should not be displayed in the navbar",
-            "line": 32,
+            "line": 30,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:121"
+              "location": "features/step_definitions/accessSteps.rb:125"
             },
             "result": {
               "status": "passed",
-              "duration": 30279100
+              "duration": 31440400
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 27
+            "line": 25
           }
         ],
         "after": [
@@ -470,7 +446,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141657500
+              "duration": 157779000
             }
           },
           {
@@ -479,7 +455,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20700
+              "duration": 30800
             }
           }
         ]
@@ -500,7 +476,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 771659100
+              "duration": 935624200
             }
           }
         ],
@@ -511,7 +487,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13900
+              "duration": 16900
             }
           },
           {
@@ -520,7 +496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8300
+              "duration": 9900
             }
           }
         ]
@@ -530,25 +506,25 @@
         "keyword": "Scenario Outline",
         "name": "User cannot sign up with incomplete credentials",
         "description": "",
-        "line": 44,
+        "line": 42,
         "type": "scenario",
         "steps": [
           {
             "keyword": "When ",
             "name": "I click the \"Sign up\" link",
-            "line": 35,
+            "line": 33,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:63"
+              "location": "features/step_definitions/accessSteps.rb:67"
             },
             "result": {
               "status": "passed",
-              "duration": 108811300
+              "duration": 135949900
             }
           },
           {
             "keyword": "And ",
             "name": "I enter the registration fields as shown below",
-            "line": 36,
+            "line": 34,
             "rows": [
               {
                 "cells": [
@@ -564,35 +540,35 @@
               }
             ],
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:67"
+              "location": "features/step_definitions/accessSteps.rb:71"
             },
             "result": {
               "status": "passed",
-              "duration": 266313800
+              "duration": 277548300
             }
           },
           {
             "keyword": "And ",
             "name": "I click the \"Sign up\" button in the modal",
-            "line": 39,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 109247100
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
-            "line": 40,
+            "line": 37,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:79"
             },
             "result": {
               "status": "passed",
-              "duration": 45629500
+              "duration": 93622700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47783600
             }
           }
         ],
@@ -603,7 +579,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140956800
+              "duration": 142798700
             }
           },
           {
@@ -612,7 +588,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34000
+              "duration": 31600
             }
           }
         ]
@@ -633,7 +609,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 861050000
+              "duration": 975806400
             }
           }
         ],
@@ -644,7 +620,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17500
+              "duration": 22700
             }
           },
           {
@@ -663,25 +639,25 @@
         "keyword": "Scenario Outline",
         "name": "User cannot sign up with incomplete credentials",
         "description": "",
-        "line": 45,
+        "line": 43,
         "type": "scenario",
         "steps": [
           {
             "keyword": "When ",
             "name": "I click the \"Sign up\" link",
-            "line": 35,
+            "line": 33,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:63"
+              "location": "features/step_definitions/accessSteps.rb:67"
             },
             "result": {
               "status": "passed",
-              "duration": 109772200
+              "duration": 110814800
             }
           },
           {
             "keyword": "And ",
             "name": "I enter the registration fields as shown below",
-            "line": 36,
+            "line": 34,
             "rows": [
               {
                 "cells": [
@@ -697,35 +673,35 @@
               }
             ],
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:67"
+              "location": "features/step_definitions/accessSteps.rb:71"
             },
             "result": {
               "status": "passed",
-              "duration": 264893300
+              "duration": 268483900
             }
           },
           {
             "keyword": "And ",
             "name": "I click the \"Sign up\" button in the modal",
-            "line": 39,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 109504100
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
-            "line": 40,
+            "line": 37,
             "match": {
               "location": "features/step_definitions/accessSteps.rb:79"
             },
             "result": {
               "status": "passed",
-              "duration": 62258100
+              "duration": 94690200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an alert message saying \"Please fill out Username and Password.\" is displayed",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/accessSteps.rb:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60700900
             }
           }
         ],
@@ -736,7 +712,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156605900
+              "duration": 143682000
             }
           },
           {
@@ -745,7 +721,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23900
+              "duration": 20800
             }
           }
         ]
@@ -776,7 +752,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 893992500
+              "duration": 956617500
             }
           }
         ],
@@ -787,7 +763,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16300
+              "duration": 16200
             }
           },
           {
@@ -796,7 +772,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18000
+              "duration": 17600
             }
           }
         ]
@@ -818,55 +794,43 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109168800
+              "duration": 108927500
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I should see the product card \"Sony vaio i5\"",
-            "line": 12,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 343112100
-            }
-          },
-          {
-            "keyword": "When ",
+            "keyword": "And ",
             "name": "I open the product detail for \"Sony vaio i5\"",
-            "line": 13,
+            "line": 12,
             "match": {
               "location": "features/step_definitions/appSteps.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 968270500
+              "duration": 1362816700
             }
           },
           {
             "keyword": "Then ",
             "name": "the product detail title should be \"Sony vaio i5\"",
-            "line": 14,
+            "line": 13,
             "match": {
               "location": "features/step_definitions/appSteps.rb:13"
             },
             "result": {
               "status": "passed",
-              "duration": 757974300
+              "duration": 680479900
             }
           },
           {
             "keyword": "And ",
             "name": "the \"Add to cart\" action should be visible",
-            "line": 15,
+            "line": 14,
             "match": {
               "location": "features/step_definitions/appSteps.rb:17"
             },
             "result": {
               "status": "passed",
-              "duration": 31658100
+              "duration": 31489900
             }
           }
         ],
@@ -883,7 +847,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 139608500
+              "duration": 143596000
             }
           },
           {
@@ -892,7 +856,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22800
+              "duration": 23200
             }
           }
         ]
@@ -913,7 +877,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 797439100
+              "duration": 903436100
             }
           }
         ],
@@ -924,7 +888,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13100
+              "duration": 15300
             }
           },
           {
@@ -933,7 +897,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17500
+              "duration": 17800
             }
           },
           {
@@ -942,7 +906,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2144679300
+              "duration": 2096818600
             }
           }
         ]
@@ -952,78 +916,66 @@
         "keyword": "Scenario Outline",
         "name": "User can add a product to cart from product detail",
         "description": "",
-        "line": 27,
+        "line": 25,
         "type": "scenario",
         "steps": [
           {
             "keyword": "When ",
             "name": "I open the product detail for \"Samsung galaxy s6\"",
-            "line": 19,
+            "line": 18,
             "match": {
               "location": "features/step_definitions/appSteps.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1293827100
+              "duration": 1305840100
             }
           },
           {
             "keyword": "And ",
-            "name": "I add the current product to the cart",
-            "line": 20,
+            "name": "I add the current product to the cart successfully",
+            "line": 19,
             "match": {
               "location": "features/step_definitions/appSteps.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 670794600
+              "duration": 1475870700
             }
           },
           {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Product added\" is displayed",
-            "line": 21,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 936841000
-            }
-          },
-          {
-            "keyword": "When ",
+            "keyword": "And ",
             "name": "I go to the cart page",
-            "line": 22,
+            "line": 20,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:25"
+              "location": "features/step_definitions/appSteps.rb:27"
             },
             "result": {
               "status": "passed",
-              "duration": 961980900
+              "duration": 1046136200
             }
           },
           {
             "keyword": "Then ",
             "name": "the cart should contain the product \"Samsung galaxy s6\"",
-            "line": 23,
+            "line": 21,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:29"
+              "location": "features/step_definitions/appSteps.rb:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1709241100
+              "duration": 707324700
             }
           }
         ],
         "tags": [
           {
             "name": "@smoke",
-            "line": 17
+            "line": 16
           },
           {
             "name": "@cart",
-            "line": 17
+            "line": 16
           }
         ],
         "after": [
@@ -1033,7 +985,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 157048700
+              "duration": 155805100
             }
           },
           {
@@ -1042,7 +994,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28800
+              "duration": 21600
             }
           }
         ]
@@ -1063,7 +1015,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 898664200
+              "duration": 948777600
             }
           }
         ],
@@ -1074,7 +1026,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17800
+              "duration": 18700
             }
           },
           {
@@ -1083,7 +1035,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17300
+              "duration": 16500
             }
           },
           {
@@ -1092,7 +1044,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1983767700
+              "duration": 1946247500
             }
           }
         ]
@@ -1102,86 +1054,74 @@
         "keyword": "Scenario",
         "name": "User can remove a product from cart",
         "description": "",
-        "line": 30,
+        "line": 28,
         "type": "scenario",
         "steps": [
           {
             "keyword": "When ",
             "name": "I open the product detail for \"Nokia lumia 1520\"",
-            "line": 31,
+            "line": 29,
             "match": {
               "location": "features/step_definitions/appSteps.rb:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1344161800
+              "duration": 1330857900
             }
           },
           {
             "keyword": "And ",
-            "name": "I add the current product to the cart",
-            "line": 32,
+            "name": "I add the current product to the cart successfully",
+            "line": 30,
             "match": {
               "location": "features/step_definitions/appSteps.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 470255000
+              "duration": 1049290100
             }
           },
           {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Product added\" is displayed",
-            "line": 33,
-            "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 707829600
-            }
-          },
-          {
-            "keyword": "When ",
+            "keyword": "And ",
             "name": "I go to the cart page",
-            "line": 34,
+            "line": 31,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:25"
+              "location": "features/step_definitions/appSteps.rb:27"
             },
             "result": {
               "status": "passed",
-              "duration": 962200500
+              "duration": 1069712300
             }
           },
           {
             "keyword": "And ",
             "name": "I remove the product \"Nokia lumia 1520\" from the cart",
-            "line": 35,
+            "line": 32,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:33"
+              "location": "features/step_definitions/appSteps.rb:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1412409200
+              "duration": 885850500
             }
           },
           {
             "keyword": "Then ",
             "name": "the cart should not contain the product \"Nokia lumia 1520\"",
-            "line": 36,
+            "line": 33,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:37"
+              "location": "features/step_definitions/appSteps.rb:39"
             },
             "result": {
               "status": "passed",
-              "duration": 837097000
+              "duration": 728707000
             }
           }
         ],
         "tags": [
           {
             "name": "@cart",
-            "line": 29
+            "line": 27
           }
         ],
         "after": [
@@ -1191,7 +1131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 156843000
+              "duration": 155934800
             }
           },
           {
@@ -1200,7 +1140,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24100
+              "duration": 22700
             }
           }
         ]
@@ -1231,7 +1171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1024681700
+              "duration": 974479500
             }
           }
         ],
@@ -1242,7 +1182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14400
+              "duration": 13900
             }
           },
           {
@@ -1251,7 +1191,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20600
+              "duration": 18400
             }
           },
           {
@@ -1260,7 +1200,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13730200
+              "duration": 13806900
             }
           }
         ]
@@ -1282,7 +1222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 110056800
+              "duration": 140551600
             }
           },
           {
@@ -1314,7 +1254,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 345895000
+              "duration": 250588600
             }
           }
         ],
@@ -1335,7 +1275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140479600
+              "duration": 158218900
             }
           },
           {
@@ -1344,7 +1284,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30000
+              "duration": 22700
             }
           }
         ]
@@ -1365,7 +1305,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 855677500
+              "duration": 927205000
             }
           }
         ],
@@ -1376,7 +1316,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000
+              "duration": 15600
             }
           },
           {
@@ -1385,7 +1325,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16400
+              "duration": 15400
             }
           },
           {
@@ -1394,7 +1334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13439100
+              "duration": 13013800
             }
           }
         ]
@@ -1416,7 +1356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 124740500
+              "duration": 108493700
             }
           },
           {
@@ -1448,7 +1388,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 563948300
+              "duration": 531937700
             }
           }
         ],
@@ -1465,7 +1405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142125300
+              "duration": 138581300
             }
           },
           {
@@ -1474,7 +1414,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27400
+              "duration": 23000
             }
           }
         ]
@@ -1495,7 +1435,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 863227400
+              "duration": 940972900
             }
           }
         ],
@@ -1506,7 +1446,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15800
+              "duration": 18300
             }
           },
           {
@@ -1515,7 +1455,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16100
+              "duration": 17400
             }
           },
           {
@@ -1524,7 +1464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12346100
+              "duration": 13441400
             }
           }
         ]
@@ -1546,7 +1486,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 110217000
+              "duration": 108312700
             }
           },
           {
@@ -1578,7 +1518,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 313880600
+              "duration": 264075500
             }
           }
         ],
@@ -1595,7 +1535,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140562700
+              "duration": 140987500
             }
           },
           {
@@ -1604,7 +1544,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21400
+              "duration": 22700
             }
           }
         ]
@@ -1635,7 +1575,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 788446100
+              "duration": 972392700
             }
           }
         ],
@@ -1646,7 +1586,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25200
+              "duration": 18000
             }
           },
           {
@@ -1655,7 +1595,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23700
+              "duration": 19800
             }
           },
           {
@@ -1664,7 +1604,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13409200
+              "duration": 13901800
             }
           }
         ]
@@ -1686,7 +1626,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 110317200
+              "duration": 142478800
             }
           },
           {
@@ -1718,7 +1658,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 441481000
+              "duration": 377482100
             }
           },
           {
@@ -1730,7 +1670,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78027500
+              "duration": 62816100
             }
           },
           {
@@ -1738,11 +1678,11 @@
             "name": "an alert message saying \"Thanks for the message!!\" is displayed",
             "line": 17,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
+              "location": "features/step_definitions/accessSteps.rb:83"
             },
             "result": {
               "status": "passed",
-              "duration": 93642200
+              "duration": 111384100
             }
           }
         ],
@@ -1759,7 +1699,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140874300
+              "duration": 139556800
             }
           },
           {
@@ -1768,7 +1708,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20000
+              "duration": 22700
             }
           }
         ]
@@ -1799,7 +1739,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 896865800
+              "duration": 855750500
             }
           }
         ],
@@ -1810,7 +1750,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15000
+              "duration": 15100
             }
           },
           {
@@ -1819,7 +1759,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15400
+              "duration": 16500
             }
           },
           {
@@ -1828,7 +1768,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13628400
+              "duration": 14065700
             }
           }
         ]
@@ -1872,7 +1812,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 109248000
+              "duration": 90874100
             }
           },
           {
@@ -1910,7 +1850,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 550833100
+              "duration": 593715100
             }
           }
         ],
@@ -1927,7 +1867,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141621100
+              "duration": 158219800
             }
           },
           {
@@ -1936,7 +1876,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21300
+              "duration": 22600
             }
           }
         ]
@@ -1968,7 +1908,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5051945300
+              "duration": 4822087900
             }
           },
           {
@@ -1980,49 +1920,37 @@
             },
             "result": {
               "status": "passed",
-              "duration": 915454500
+              "duration": 1107509600
             }
           },
           {
             "keyword": "And ",
-            "name": "I add the current product to the cart",
+            "name": "I add the current product to the cart successfully",
             "line": 11,
             "match": {
               "location": "features/step_definitions/appSteps.rb:21"
             },
             "result": {
               "status": "passed",
-              "duration": 755699200
+              "duration": 1439475500
             }
           },
           {
-            "keyword": "Then ",
-            "name": "an alert message saying \"Product added.\" is displayed",
+            "keyword": "And ",
+            "name": "I go to the cart page",
             "line": 12,
             "match": {
-              "location": "features/step_definitions/accessSteps.rb:79"
+              "location": "features/step_definitions/appSteps.rb:27"
             },
             "result": {
               "status": "passed",
-              "duration": 710235500
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I go to the cart page",
-            "line": 14,
-            "match": {
-              "location": "features/step_definitions/appSteps.rb:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 929611300
+              "duration": 1041188200
             }
           },
           {
             "keyword": "And ",
             "name": "I place an order with the details below",
-            "line": 15,
+            "line": 13,
             "rows": [
               {
                 "cells": [
@@ -2062,35 +1990,35 @@
               }
             ],
             "match": {
-              "location": "features/step_definitions/appSteps.rb:41"
+              "location": "features/step_definitions/appSteps.rb:43"
             },
             "result": {
               "status": "passed",
-              "duration": 995173600
+              "duration": 1004680600
             }
           },
           {
             "keyword": "Then ",
             "name": "the purchase confirmation should be displayed",
-            "line": 22,
+            "line": 20,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:45"
+              "location": "features/step_definitions/appSteps.rb:47"
             },
             "result": {
               "status": "passed",
-              "duration": 472583900
+              "duration": 491784100
             }
           },
           {
             "keyword": "And ",
             "name": "the purchase confirmation should include \"Thank you for your purchase!\"",
-            "line": 23,
+            "line": 21,
             "match": {
-              "location": "features/step_definitions/appSteps.rb:49"
+              "location": "features/step_definitions/appSteps.rb:51"
             },
             "result": {
               "status": "passed",
-              "duration": 922073600
+              "duration": 966070100
             }
           }
         ],
@@ -2115,7 +2043,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16800
+              "duration": 16000
             }
           },
           {
@@ -2124,7 +2052,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18900
+              "duration": 18300
             }
           },
           {
@@ -2133,7 +2061,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1827445000
+              "duration": 1994124400
             }
           },
           {
@@ -2142,7 +2070,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15410000
+              "duration": 15513100
             }
           }
         ],
@@ -2153,7 +2081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158573200
+              "duration": 155300000
             }
           },
           {
@@ -2162,7 +2090,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22900
+              "duration": 22500
             }
           }
         ]

@@ -8,10 +8,8 @@ Scenario: Successful checkout and purchase execution
     Given I am logged in with a newly registered user
 
     When I open the product detail for "Samsung galaxy s6"
-    And I add the current product to the cart
-    Then an alert message saying "Product added." is displayed
-
-    When I go to the cart page
+    And I add the current product to the cart successfully
+    And I go to the cart page
     And I place an order with the details below
       | Name        | Valeria Perez    |
       | Country     | Bolivia          |
