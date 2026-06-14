@@ -4,18 +4,11 @@ After do
 end
 
 Before '@cart' do
-  visit Constants::APP_URL
-  click_link('Cart')
-  expect(page).to have_text('Products', wait: Capybara.default_max_wait_time)
-
-  loop do
-    delete_link = first('#tbodyid a', text: 'Delete', minimum: 0, wait: 1)
-    break unless delete_link
-
-    delete_link.click
-  end
+  home_page.load
+  cart_page.open
+  cart_page.clear
 end
 
 Before '@maximize' do
-  page.driver.browser.manage.window.maximize
+  base_page.maximize_window
 end

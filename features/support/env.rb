@@ -5,6 +5,7 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 
 SUPPORTED_BROWSERS = %w[firefox chrome].freeze
+ENV['LANDING_PAGE_URL'] ||= 'https://www.demoblaze.com/index.html'
 
 selected_browser = ENV.fetch('BROWSER', 'firefox').strip.downcase
 unless SUPPORTED_BROWSERS.include?(selected_browser)
@@ -42,5 +43,5 @@ Capybara.default_driver = DRIVER_DINAMICO
 Capybara.javascript_driver = DRIVER_DINAMICO
 
 Capybara.default_max_wait_time = 15
-Capybara.app_host = 'https://www.demoblaze.com/'
+Capybara.app_host = ENV.fetch('LANDING_PAGE_URL')
 Capybara.run_server = false

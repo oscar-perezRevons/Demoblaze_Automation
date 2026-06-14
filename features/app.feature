@@ -4,7 +4,7 @@ Feature: Demoblaze Store App
   I want to browse products and manage my cart
 
   Background: Open the Demoblaze home page
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage
 
 @smoke
 Scenario: User can browse laptops and open a product detail
@@ -26,7 +26,7 @@ Examples:
     | Product           |
     | Samsung galaxy s6 |
 
-@regression @cart
+@cart
 Scenario: User can remove a product from cart
     When I open the product detail for "Nokia lumia 1520"
     And I add the current product to the cart

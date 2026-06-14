@@ -1,20 +1,11 @@
 Given('I click the {string} link in the navbar') do |link_text|
-  find(navbar_link_selector(link_text), wait: Capybara.default_max_wait_time).click
+  home_page.click_navbar_link(link_text)
 end
 
 When('I fill out the form with the following details') do |table|
-  data = table.rows_hash
-  find(contact_form_selector('Email')).set(data['Email'])
-  find(contact_form_selector('Name')).set(data['Name'])
-  find(contact_form_selector('Message')).set(data['Message'])
+  contact_page.fill_form(table.rows_hash)
 end
 
 When('I click the {string} button') do |button_text|
-  selector = Constants::BUTTON_SELECTORS[button_text]
-
-  if selector
-    find(selector, wait: Capybara.default_max_wait_time).click
-  else
-    click_link_or_button(button_text)
-  end
+  contact_page.click_button(button_text)
 end

@@ -1,5 +1,4 @@
 default: --publish-quiet --format pretty
 smoke: --tags @smoke
-regression: --tags @regression
 report: --publish-quiet --format pretty --format html --out reports/cucumber.html --format json --out reports/cucumber.json
 smoke_report: --publish-quiet --tags @smoke --format pretty --format html --out reports/smoke.html --format json --out reports/smoke.json

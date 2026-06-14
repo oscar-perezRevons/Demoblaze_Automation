@@ -1,5 +1,5 @@
 When('I click the {string} category link in the sidebar') do |category_name|
-  find(:xpath, category_link_selector(category_name), wait: Capybara.default_max_wait_time).click
+  home_page.click_category(category_name)
 end
 
 Then('I should see a list of products related to the {string} category at the top') do |_category_name, table|
@@ -7,7 +7,6 @@ Then('I should see a list of products related to the {string} category at the to
     product_name = row['Product Name']
     expected_price = row['Price']
 
-    card_xpath = "//div[contains(@class,'card h-100')][.//h4[contains(@class,'card-title')]/a[normalize-space()='#{product_name}'] and .//h5[normalize-space()='#{expected_price}']]"
-    expect(page).to have_xpath(card_xpath, wait: Capybara.default_max_wait_time)
+    expect(home_page).to have_category_product(product_name, expected_price)
   end
 end
