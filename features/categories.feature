@@ -20,7 +20,7 @@ Scenario: Navigate to Laptops category
     Then I should see a list of products related to the "Laptops" category at the top
       | Product Name | Price |
       | Sony vaio i5 | $790  |
-      | MacBook Pro  | $1100 |
+      | MacBook Pro | $1100 |
 
 @regression @maximize
 Scenario: Navigate to Monitors category

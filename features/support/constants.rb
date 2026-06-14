@@ -64,6 +64,57 @@ module Constants
     'Sony vaio i5' => 'div.col-md-6:nth-child(8)',
     'Sony vaio i7' => 'div.col-md-6:nth-child(9)'
   }.freeze
+  CATEGORY_PRODUCTS_LINK_SELECTOR = {
+    'Phones' => {
+      'Samsung galaxy s6' => '#tbodyid > div:nth-child(1) > div > div',
+      'Nokia lumia 1520' => '#tbodyid > div:nth-child(2) > div > div',
+      'Nexus 6' => '#tbodyid > div:nth-child(3) > div > div',
+      'Samsung galaxy s7' => '#tbodyid > div:nth-child(4) > div > div',
+      'Iphone 6 32gb' => '#tbodyid > div:nth-child(5) > div > div',
+      'Sony xperia z5' => '#tbodyid > div:nth-child(6) > div > div',
+      'HTC One M9' => '#tbodyid > div:nth-child(7) > div > div'
+    },
+    'Laptops' => {
+      'Sony vaio i5' => '#tbodyid > div:nth-child(1) > div > div',
+      'Sony vaio i7' => '#tbodyid > div:nth-child(2) > div > div',
+      'MacBook air' => '#tbodyid > div:nth-child(3) > div > div',
+      'Dell i7 8gb' => '#tbodyid > div:nth-child(4) > div > div',
+      '2017 Dell 15.6 Inch' => '#tbodyid > div:nth-child(5) > div > div',
+      'MacBook Pro' => '#tbodyid > div:nth-child(6) > div > div'
+    },
+    'Monitors' =>{
+      'Apple monitor 24' => '#tbodyid > div:nth-child(1) > div > div',
+      'ASUS Full HD' => '#tbodyid > div:nth-child(2) > div > div'
+    }
+  }
+DETAIL_PRODUCT_STRUCTURE = {
+    'Name' => '#tbodyid > h2',
+    "Price" => '#tbodyid > h3',
+    "Description" => '#more-information > p'
+  }
+end
+
+module ProductField
+  Price = 0
+  Name = 1
+end
+def detail_structure_selector(field_name)
+  Constants::DETAIL_PRODUCT_STRUCTURE.fetch(field_name) do
+    raise "Unknown selector for that field #{field_name}"
+  end
+end
+def category_product_selector(category_name,product_name,type)
+  base_selector = Constants::CATEGORY_PRODUCTS_LINK_SELECTOR.fetch(category_name).fetch(product_name) do
+    raise "Unknown selector for catrgory or product"
+  end
+  case type
+  when ProductField::Price
+    base_selector = "#{base_selector} > h5"
+  when ProductField::Name
+    base_selector = "#{base_selector} > h4 > a"
+  else
+    raise "Invalid Type selected"
+  end
 end
 
 def navbar_link_selector(link_text)
