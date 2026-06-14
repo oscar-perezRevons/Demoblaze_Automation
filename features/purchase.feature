@@ -7,11 +7,12 @@ Feature: Demoblaze Product Purchase
 Scenario: Successful checkout and purchase execution
     Given I am logged in with a newly registered user
 
-    When I open the product detail for "Samsung galaxy s6"
-    And I add the current product to the cart
-    Then an alert message saying "Product added." is displayed
-
-    When I go to the cart page
+    When I add to my cart the products below 
+      | Category | Product Name |
+      | Phones   | Samsung galaxy s6 |
+      | Laptops  | Dell i7 8gb |
+      | Monitors | ASUS Full HD |
+    And  I click the "Cart" link in the navbar
     And I place an order with the details below
       | Name        | Valeria Perez    |
       | Country     | Bolivia          |

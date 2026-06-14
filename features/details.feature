@@ -5,7 +5,8 @@ Feature: Product Details Navigation
 
   Background: Open the Demoblaze home page
     Given I am on the Demoblaze homepage
-
+  
+  @smoke
   Scenario Outline: Navigate to a Product Details for products on the landing page
     When I Click the "<Category>" and select "<Product Name>" on the landing page
     Then I should see the "<Product Name>", "<Price>" and "<Description>"

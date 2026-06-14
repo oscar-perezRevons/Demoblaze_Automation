@@ -28,6 +28,7 @@ module Constants
 
   BUTTON_SELECTORS = {
     'Place Order' => 'button[data-target="#orderModal"]',
+    'Purchase' => '#orderModal > div > div > div.modal-footer > button.btn.btn-primary',
     'Add to cart' => 'a.btn.btn-success.btn-lg',
     'Send message' => '#exampleModal button.btn.btn-primary',
     'Next' => '#next2',
@@ -41,7 +42,14 @@ module Constants
     'Name' => '#recipient-name',
     'Message' => '#message-text'
   }.freeze
-
+  PLACE_ORDER_FORM_SELECTOR = {
+    'Name' => '#name',
+    'Country' => '#country',
+    'City' => '#city',
+    'Credit card' => '#card',
+    'Month' => '#month',
+    'Year' => '#year'
+  }
   LOGIN_FORM_SELECTOR={
     'Username' => '#loginusername',
     'Password' => '#loginpassword',
@@ -87,11 +95,12 @@ module Constants
       'ASUS Full HD' => '#tbodyid > div:nth-child(2) > div > div'
     }
   }
-DETAIL_PRODUCT_STRUCTURE = {
+  DETAIL_PRODUCT_STRUCTURE = {
     'Name' => '#tbodyid > h2',
     "Price" => '#tbodyid > h3',
     "Description" => '#more-information > p'
   }
+  CART_PRODUCT_TABLE= '#tbodyid'
 end
 
 module ProductField
@@ -114,6 +123,15 @@ def category_product_selector(category_name,product_name,type)
     base_selector = "#{base_selector} > h4 > a"
   else
     raise "Invalid Type selected"
+  end
+end
+def product_in_the_cart()
+  base_selector = Constants::CART_PRODUCT_TABLE
+  "#{base_selector} tr"
+end
+def place_order_form_selector(field_name)
+  Constants::PLACE_ORDER_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown selector for the field: #{field_name}"
   end
 end
 
