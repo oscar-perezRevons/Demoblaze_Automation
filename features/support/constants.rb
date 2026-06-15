@@ -1,7 +1,13 @@
 module Constants
-  APP_URL = 'https://www.demoblaze.com/index.html'.freeze
+  APP_URL = ENV['DEFAULT_HOME_PAGE'].freeze
   AUTO_USER_TOKEN = 'AUTO_USER'.freeze
   AUTO_PASS_TOKEN = 'AUTO_PASS'.freeze
+  
+  FIRST_NAMES = %w[maria carlos ana luis sofia diego paula marco laura andres].freeze
+
+  LAST_NAMES = %w[rios perez lopez vargas castro mendoza herrera flores torres guzman].freeze
+ 
+  ACCEPTED_SIGN_UP_MESSAGES = ['Sign up successful', 'This user already exist'].freeze
 
   NAVBAR_LINK_SELECTORS = {
     'Home' => '#navbarExample a[href="index.html"]',
@@ -10,7 +16,8 @@ module Constants
     'Cart' => '#cartur',
     'Log in' => '#login2',
     'Sign up' => '#signin2',
-    'Log out' => '#logout2'
+    'Log out' => '#logout2',
+    'Profile' => '#nameofuser'
   }.freeze
 
   CATEGORY_LINK_SELECTORS = {
@@ -21,10 +28,13 @@ module Constants
 
   BUTTON_SELECTORS = {
     'Place Order' => 'button[data-target="#orderModal"]',
+    'Purchase' => '#orderModal > div > div > div.modal-footer > button.btn.btn-primary',
     'Add to cart' => 'a.btn.btn-success.btn-lg',
     'Send message' => '#exampleModal button.btn.btn-primary',
     'Next' => '#next2',
-    'Previous' => '#prev2'
+    'Previous' => '#prev2',
+    'Log in' => '#logInModal > div > div > div.modal-footer > button.btn.btn-primary',
+    'Sign up' => '#signInModal > div > div > div.modal-footer > button.btn.btn-primary'
   }.freeze
 
   CONTACT_FORM_SELECTORS = {
@@ -32,6 +42,24 @@ module Constants
     'Name' => '#recipient-name',
     'Message' => '#message-text'
   }.freeze
+  PLACE_ORDER_FORM_SELECTOR = {
+    'Name' => '#name',
+    'Country' => '#country',
+    'City' => '#city',
+    'Credit card' => '#card',
+    'Month' => '#month',
+    'Year' => '#year'
+  }
+  LOGIN_FORM_SELECTOR={
+    'Username' => '#loginusername',
+    'Password' => '#loginpassword',
+    'WelcomeMessage' => '#nameofuser'
+  }.freeze
+
+  SIGN_UP_FORM_SELECTOR={
+    'Username' => '#sign-username',
+    'Password' => '#sign-password'
+  }
 
   HOME_PRODUCTS = {
     'Samsung galaxy s6' => 'div.col-md-6:nth-child(1)',
@@ -44,6 +72,67 @@ module Constants
     'Sony vaio i5' => 'div.col-md-6:nth-child(8)',
     'Sony vaio i7' => 'div.col-md-6:nth-child(9)'
   }.freeze
+  CATEGORY_PRODUCTS_LINK_SELECTOR = {
+    'Phones' => {
+      'Samsung galaxy s6' => '#tbodyid > div:nth-child(1) > div > div',
+      'Nokia lumia 1520' => '#tbodyid > div:nth-child(2) > div > div',
+      'Nexus 6' => '#tbodyid > div:nth-child(3) > div > div',
+      'Samsung galaxy s7' => '#tbodyid > div:nth-child(4) > div > div',
+      'Iphone 6 32gb' => '#tbodyid > div:nth-child(5) > div > div',
+      'Sony xperia z5' => '#tbodyid > div:nth-child(6) > div > div',
+      'HTC One M9' => '#tbodyid > div:nth-child(7) > div > div'
+    },
+    'Laptops' => {
+      'Sony vaio i5' => '#tbodyid > div:nth-child(1) > div > div',
+      'Sony vaio i7' => '#tbodyid > div:nth-child(2) > div > div',
+      'MacBook air' => '#tbodyid > div:nth-child(3) > div > div',
+      'Dell i7 8gb' => '#tbodyid > div:nth-child(4) > div > div',
+      '2017 Dell 15.6 Inch' => '#tbodyid > div:nth-child(5) > div > div',
+      'MacBook Pro' => '#tbodyid > div:nth-child(6) > div > div'
+    },
+    'Monitors' =>{
+      'Apple monitor 24' => '#tbodyid > div:nth-child(1) > div > div',
+      'ASUS Full HD' => '#tbodyid > div:nth-child(2) > div > div'
+    }
+  }
+  DETAIL_PRODUCT_STRUCTURE = {
+    'Name' => '#tbodyid > h2',
+    "Price" => '#tbodyid > h3',
+    "Description" => '#more-information > p'
+  }
+  CART_PRODUCT_TABLE= '#tbodyid'
+end
+
+module ProductField
+  Price = 0
+  Name = 1
+end
+def detail_structure_selector(field_name)
+  Constants::DETAIL_PRODUCT_STRUCTURE.fetch(field_name) do
+    raise "Unknown selector for that field #{field_name}"
+  end
+end
+def category_product_selector(category_name,product_name,type)
+  base_selector = Constants::CATEGORY_PRODUCTS_LINK_SELECTOR.fetch(category_name).fetch(product_name) do
+    raise "Unknown selector for catrgory or product"
+  end
+  case type
+  when ProductField::Price
+    base_selector = "#{base_selector} > h5"
+  when ProductField::Name
+    base_selector = "#{base_selector} > h4 > a"
+  else
+    raise "Invalid Type selected"
+  end
+end
+def product_in_the_cart()
+  base_selector = Constants::CART_PRODUCT_TABLE
+  "#{base_selector} tr"
+end
+def place_order_form_selector(field_name)
+  Constants::PLACE_ORDER_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown selector for the field: #{field_name}"
+  end
 end
 
 def navbar_link_selector(link_text)
@@ -70,6 +159,18 @@ def contact_form_selector(field_name)
   end
 end
 
+def login_form_selector(field_name)
+  Constants::LOGIN_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown Login form selector for '#{field_name}'"
+  end
+end
+
+def sign_up_form_selector(field_name)
+  Constants::SIGN_UP_FORM_SELECTOR.fetch(field_name) do
+    raise "Unknown Sign Up form selector for '#{field_name}'"
+  end
+end
+
 def home_product_name_selector(product_name)
   base_selector = Constants::HOME_PRODUCTS.fetch(product_name) do
     raise "Unknown home product selector for '#{product_name}'"
@@ -85,3 +186,4 @@ def home_product_price_selector(product_name)
 
   "#{base_selector} > div:nth-child(1) > div:nth-child(2) > h5:nth-child(2)"
 end
+

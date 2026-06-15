@@ -1,18 +1,15 @@
 Then('I should see the main categories in the left sidebar') do |table|
-  table.hashes.each do |row|
-    category_name = row['Category Name']
-    expect(find(:xpath, category_link_selector(category_name), wait: Capybara.default_max_wait_time)).to be_visible
-  end
+  @home_page = HomePage.new
+  expect(@home_page.categorias_cargadas?(table.hashes)).to be_truthy
+  expect(@home_page.categorias_correctas_visibles?(table.hashes)).to be_truthy
 end
 
 Then('I should see a product list without any category selected') do |table|
-  table.hashes.each do |row|
-    product_name = row['Product Name']
-    expected_price = row['Price']
-
-    expect(find(home_product_name_selector(product_name), wait: Capybara.default_max_wait_time)).to have_text(product_name)
-    expect(find(home_product_price_selector(product_name), wait: Capybara.default_max_wait_time)).to have_text(expected_price)
-  end
+  @home_page = HomePage.new
+  expect(@home_page.nombres_de_productos_cargados?(table.hashes)).to be_truthy
+  expect(@home_page.precios_de_productos_cargados?(table.hashes)).to be_truthy
+  expect(@home_page.nombres_de_productos_correctos?(table.hashes)).to be_truthy
+  expect(@home_page.precios_de_productos_correctos?(table.hashes)).to be_truthy
 end
 
 Then('I should see the pagination controls at the bottom of the product list') do

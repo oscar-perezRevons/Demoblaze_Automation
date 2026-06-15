@@ -4,7 +4,7 @@ Feature: Categories Filter Navigation
   So that I can easily find the products I am interested in
 
   Background: Open the Demoblaze home page
-    Given I am on the Demoblaze homepage "https://www.demoblaze.com/index.html"
+    Given I am on the Demoblaze homepage
 
 @smoke @maximize
 Scenario: Navigate to Phones category
@@ -20,7 +20,7 @@ Scenario: Navigate to Laptops category
     Then I should see a list of products related to the "Laptops" category at the top
       | Product Name | Price |
       | Sony vaio i5 | $790  |
-      | MacBook Pro  | $1100 |
+      | MacBook Pro | $1100 |
 
 @regression @maximize
 Scenario: Navigate to Monitors category
